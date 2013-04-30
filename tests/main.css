@@ -1,0 +1,27 @@
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  color: #e6e6e6;
+  color: #cccccc;
+  color: #b3b3b3;
+  color: #999999;
+  color: #808080;
+  color: #666666;
+  color: #4d4d4d;
+  color: #333333;
+  color: #191919;
+}
