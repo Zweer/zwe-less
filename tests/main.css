@@ -25,3 +25,81 @@ body {
   color: #333333;
   color: #191919;
 }
+
+.test-backface-visibility {
+  -webkit-backface-visibility: visible;
+     -moz-backface-visibility: visible;
+      -ms-backface-visibility: visible;
+          backface-visibility: visible;
+}
+
+.test-border-image {
+  -webkit-border-image: none;
+       -o-border-image: none;
+          border-image: none;
+}
+
+.test-border-radius {
+  border-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-border-top-left-radius {
+  border-top-left-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-border-top-right-radius {
+  border-top-right-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-border-bottom-right-radius {
+  border-bottom-right-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-border-bottom-left-radius {
+  border-bottom-left-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-border-top-radius {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-border-right-radius {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-border-bottom-radius {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-border-left-radius {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background-clip: padding-box;
+}
+
+.test-box-shadow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.test-box-sizing {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.test-opacity {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
