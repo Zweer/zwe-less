@@ -4,6 +4,9 @@
 // - Center Block
 // - Clearfix
 // - Font Face
+// - Size
+// -- Square
+// -- Rectangle
 // - Text Truncate
 
 // Center Block
@@ -49,6 +52,17 @@
         font-weight: @font-weight;
         font-style: @font-style;
     }
+}
+
+// Size
+// Square
+.size(@square) {
+    .size(@square, @square);
+}
+// Rectangle
+.size(@width, @height) {
+     width: @width;
+    height: @height;
 }
 
 // Text Truncate
