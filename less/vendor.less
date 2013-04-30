@@ -90,8 +90,7 @@
 
 // Box Shadow
 .box-shadow(@shadow: none) {
-    -webkit-box-shadow: @shadow;
-       -moz-box-shadow: @shadow;
+    -webkit-box-shadow: @shadow; // iOS < 5 & Android < 4 & Blackberry 7
             box-shadow: @shadow;
 }
 
