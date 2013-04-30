@@ -1,0 +1,45 @@
+// Utilities
+
+// Table of contents:
+// - Center Block
+// - Clearfix
+// - Text Truncate
+
+// Center Block
+.center-block {
+    display: block;
+
+     margin-left: auto;
+    margin-right: auto;
+}
+
+// Clearfix
+// This is not a mixin but a class because in this way it's easier to use directly in HTML
+// 
+// // Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Text Truncate
+// Requires inline-block or block for proper styling
+.text-truncate(@truncate-model: ellipsis) {
+    overflow: hidden;
+    text-overflow: @truncate-model;
+    white-space: nowrap;
+}
