@@ -1,0 +1,15 @@
+{
+    "name": "zwe-less"
+  , "description": "A collection of LESS mixins and variables."
+  , "version": "0.0.1"
+  , "keywords": ["zweless", "css", "less"]
+  , "author": "Niccolò Olivieri"
+  , "repository": {
+      "type": "git"
+    , "url": "https://github.com/Zweer/zwe-less.git"
+  }
+  , "license": "MIT"
+  , "devDependencies": {
+    "recess": "1.1.6"
+  }
+}
