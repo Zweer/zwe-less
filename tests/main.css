@@ -103,3 +103,11 @@ body {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: bold;
+  src: url("opensans-webfont.eot");
+  src: url("opensans-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-webfont.woff") format("woff"), url("opensans-webfont.ttf") format("truetype"), url("opensans-webfont.svg#Open Sans") format("svg");
+}
