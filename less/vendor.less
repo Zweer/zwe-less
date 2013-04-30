@@ -103,9 +103,7 @@
 
 // Opacity
 .opacity(@opacity: 1) {
-    -webkit-opacity: @opacity;
-       -moz-opacity: @opacity;
-            opacity: @opacity;
+    opacity: @opacity;
 
     @opacity-ie: @opacity * 100;
     filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
