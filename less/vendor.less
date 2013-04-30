@@ -1,8 +1,13 @@
 // Vendors
 
 // Table of contents: 
+// - Backface Visibility
+// 
 // - Background
 // -- Background Clip
+// -- Background Origin
+// 
+// - Border Image
 // 
 // - Border Radius
 // -- Border Radius
@@ -15,7 +20,17 @@
 // -- Border Bottom Radius
 // -- Border Left Radius
 // 
+// - Box Shadow
+// 
 // - Box Sizing
+
+// Backface Visibility
+.backface-visibility(@visibility: visible) {
+    -webkit-backface-visibility: @visibility;
+       -moz-backface-visibility: @visibility;
+        -ms-backface-visibility: @visibility;
+            backface-visibility: @visibility;
+}
 
 // Background
 // - Background Clip
@@ -23,6 +38,20 @@
     -webkit-background-clip: @box-model;
        -moz-background-clip: @box-model;
             background-clip: @box-model;
+}
+// - Background Origin
+.background-origin(@origin: padding-box) {
+    -webkit-background-origin: @origin;
+       -moz-background-origin: @origin;
+            background-origin: @origin;
+}
+
+// Border Image
+.border-image(@image: none) {
+    -webkit-border-image: @image;
+       -moz-border-image: @image;
+         -o-border-image: @image;
+            border-image: @image;
 }
 
 // Border Radius
@@ -85,6 +114,13 @@
 .border-left-radius(@radius: 0) {
        .border-top-left-radius(@radius);
     .border-bottom-left-radius(@radius);
+}
+
+// Box Shadow
+.box-shadow(@shadow: none) {
+    -webkit-box-shadow: @shadow;
+       -moz-box-shadow: @shadow;
+            box-shadow: @shadow;
 }
 
 // Box Sizing
