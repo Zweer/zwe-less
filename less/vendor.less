@@ -96,7 +96,7 @@
 
 // Box Sizing
 .box-sizing(@box-model: content-box) {
-    -webkit-box-sizing: @box-model;
+    -webkit-box-sizing: @box-model; // iOS < 5 & Android < 4 & Blackberry 7
        -moz-box-sizing: @box-model;
             box-sizing: @box-model;
 }
