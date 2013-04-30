@@ -3,9 +3,8 @@
 // Table of contents: 
 // - Backface Visibility
 // 
-// - Border Image
-// 
-// - Border Radius
+// - Border
+// -- Border Image
 // -- Border Radius
 // -- Border Top Left Radius
 // -- Border Top Right Radius
@@ -30,6 +29,7 @@
             backface-visibility: @visibility;
 }
 
+// Border Radius
 // Border Image
 .border-image(@image: none) {
     -webkit-border-image: @image;
@@ -38,7 +38,6 @@
             border-image: @image;
 }
 
-// Border Radius
 // - Border Radius
 .border-radius(@radius: 0) {
     -webkit-border-radius: @radius;
