@@ -3,6 +3,7 @@
 // Table of contents:
 // - Center Block
 // - Clearfix
+// - Font Face
 // - Text Truncate
 
 // Center Block
@@ -34,6 +35,20 @@
   &:after {
     clear: both;
   }
+}
+
+// Font Face
+.font-face(@font-name, @font-file, @font-weight: normal, @font-style: normal) {
+    @font-face {
+        font-family: "@{font-name}";
+        src: url("@{font-file}-webfont.eot");
+        src: url("@{font-file}-webfont.eot?#iefix") format("embedded-opentype"),
+             url("@{font-file}-webfont.woff") format("woff"),
+             url("@{font-file}-webfont.ttf") format("truetype"),
+             url("@{font-file}-webfont.svg#@{fontname}") format("svg");
+        font-weight: @font-weight;
+        font-style: @font-style;
+    }
 }
 
 // Text Truncate
