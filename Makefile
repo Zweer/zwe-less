@@ -1,5 +1,5 @@
-DOCS = ../gh-pages/less/main.less
-DOCS_COMPILED = ../gh-pages/css/main.css
+DOCS = ./less/main.less
+DOCS_COMPILED = ./css/main.css
 
 HR=\033[37m--------------------------------------------------\033[39m
 PATH := ./node_modules/.bin:$(PATH)
@@ -9,7 +9,7 @@ build:
 	@echo -e ""
 	@printf "\033[35mCompiling main.less...\033[39m"
 	@recess --compile ${DOCS} > ${DOCS_COMPILED}
-	@echo -e "\033[32mSuccess!\033[39m\n"	
+	@echo -e "\033[32mSuccess!\033[39m\n"
 
 # Watch less files changes
 watch:
