@@ -1,0 +1,105 @@
+// Vendors
+
+// Table of contents: 
+// - Backface Visibility
+// 
+// - Border
+// -- Border Image
+// -- Border Radius
+// -- Border Top Left Radius
+// -- Border Top Right Radius
+// -- Border Bottom Right Radius
+// -- Border Bottom Left Radius
+// -- Border Top Radius
+// -- Border Right Radius
+// -- Border Bottom Radius
+// -- Border Left Radius
+// 
+// - Box Shadow
+// 
+// - Box Sizing
+// 
+// - Opacity
+
+// Backface Visibility
+.backface-visibility(@visibility: visible) {
+    -webkit-backface-visibility: @visibility;
+       -moz-backface-visibility: @visibility;
+        -ms-backface-visibility: @visibility;
+            backface-visibility: @visibility;
+}
+
+// Border Radius
+// Border Image
+.border-image(@image: none) {
+    -webkit-border-image: @image; // Safari <= 5.1 & iOS < 6 & Android & Blackberry 7
+         -o-border-image: @image;
+            border-image: @image;
+}
+
+// - Border Radius
+.border-radius(@radius: 0) {
+      border-radius: @radius;
+    background-clip: padding-box;
+}
+// - Border Top Left Radius
+.border-top-left-radius(@radius: 0) {
+    border-top-left-radius: @radius;
+           background-clip: padding-box;
+}
+// - Border Top Right Radius
+.border-top-right-radius(@radius: 0) {
+    border-top-right-radius: @radius;
+            background-clip: padding-box;
+}
+// - Border Bottom Right Radius
+.border-bottom-right-radius(@radius: 0) {
+    border-bottom-right-radius: @radius;
+               background-clip: padding-box;
+}
+// - Border Bottom Left Radius
+.border-bottom-left-radius(@radius: 0) {
+    border-bottom-left-radius: @radius;
+              background-clip: padding-box;
+}
+// - Border Top Radius
+.border-top-radius(@radius: 0) {
+     .border-top-left-radius(@radius);
+    .border-top-right-radius(@radius);
+}
+// - Border Right Radius
+.border-right-radius(@radius: 0) {
+       .border-top-right-radius(@radius);
+    .border-bottom-right-radius(@radius);
+}
+// - Border Bottom Radius
+.border-bottom-radius(@radius: 0) {
+     .border-bottom-left-radius(@radius);
+    .border-bottom-right-radius(@radius);
+}
+// - Border Left Radius
+.border-left-radius(@radius: 0) {
+       .border-top-left-radius(@radius);
+    .border-bottom-left-radius(@radius);
+}
+
+// Box Shadow
+.box-shadow(@shadow: none) {
+    -webkit-box-shadow: @shadow; // iOS < 5 & Android < 4 & Blackberry 7
+            box-shadow: @shadow;
+}
+
+// Box Sizing
+.box-sizing(@box-model: content-box) {
+    -webkit-box-sizing: @box-model; // iOS < 5 & Android < 4 & Blackberry 7
+       -moz-box-sizing: @box-model;
+            box-sizing: @box-model;
+}
+
+// Opacity
+.opacity(@opacity: 1) {
+    opacity: @opacity;
+
+    @opacity-ie: @opacity * 100;
+    filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
