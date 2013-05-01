@@ -10,7 +10,6 @@
   }
   , "license": "MIT"
   , "devDependencies": {
-    "recess": "1.1.6",
-    "watchr": "2.4.3"
+    "recess": "1.1.6"
   }
 }
