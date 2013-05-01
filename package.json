@@ -1,0 +1,6 @@
+{
+    "devDependencies": {
+      "recess": "1.1.6"
+    , "supervisor": "0.5.2"
+  }
+}
