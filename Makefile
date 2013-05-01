@@ -4,7 +4,6 @@ TESTS_COMPILED = ./tests/main.css
 DOCS = ../gh-pages/less/main.less
 DOCS_COMPILED = ../gh-pages/css/main.css
 
-CHECK=\033[32m✔ Done\033[39m
 HR=\033[37m--------------------------------------------------\033[39m
 PATH := ./node_modules/.bin:$(PATH)
 
@@ -24,7 +23,7 @@ gh-pages: build
 	@recess --compile ${DOCS} > ${DOCS_COMPILED}
 	@echo -e "\033[32mSuccess!\033[39m\n"	
 
-# Watch less files
-watch: 
+# Watch less files changes
+watch:
 	@echo -e "Watching less files..."
-	@watchr -e "watch('less/.*\.less') { system 'make' }"
+	@supervisor --watch less --no-restart-on exit --quiet --extensions 'less' --exec make --
