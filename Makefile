@@ -16,6 +16,7 @@ build:
 
 # Compile docs
 gh-pages: build
+	@echo -e ""
 	@printf "\033[35mCopying less files into gh-pages directory...\033[39m"
 	@cp -r less/* ../gh-pages/less
 	@echo -e "\033[32mSuccess!\033[39m\n"
