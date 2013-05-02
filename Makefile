@@ -27,4 +27,4 @@ gh-pages: build
 # Watch less files changes
 watch:
 	@echo -e "Watching less files..."
-	@supervisor --watch less --no-restart-on exit --quiet --extensions 'less' --exec make --
+	@supervisor --watch less,tests --no-restart-on exit --quiet --extensions 'less' --exec make --

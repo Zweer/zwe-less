@@ -33,16 +33,16 @@ body {
 }
 
 .test-backface-visibility {
-  -webkit-backface-visibility: visible;
-     -moz-backface-visibility: visible;
-      -ms-backface-visibility: visible;
-          backface-visibility: visible;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .test-border-image {
-  -webkit-border-image: none;
-       -o-border-image: none;
-          border-image: none;
+  -webkit-border-image: url(border.png) 30 30 round;
+       -o-border-image: url(border.png) 30 30 round;
+          border-image: url(border.png) 30 30 round;
 }
 
 .test-border-radius {
