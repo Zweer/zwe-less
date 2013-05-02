@@ -31,7 +31,6 @@ code {
     background-color: rgba(192, 0, 0, .1);
     padding: 2px 4px;
     font-size: 90%;
-    white-space: nowrap;
 
     .border-radius(4px);
 }
@@ -76,6 +75,35 @@ pre {
         &.second {
             margin-left: 2%;
         }
+    }
+
+    .attribute { 
+        color: hsl(40, 50%, 30%) 
+    }
+    .variable  { 
+        color: hsl(120, 10%, 30%) 
+    }
+    .element { 
+        color: hsl(170, 20%, 30%) 
+    }
+    .string, 
+    .regexp { 
+        color: hsl(75, 50%, 35%) 
+    }
+    .class { 
+        color: hsl(40, 40%, 30%); font-weight: normal 
+    }
+    .id { 
+        color: hsl(50, 40%, 30%); font-weight: normal 
+    }
+    .comment { 
+        color: rgba(0, 0, 0, 0.4) 
+    }
+    .number, .color { 
+        color: hsl(10, 40%, 30%) 
+    }
+    .class, .mixin, .special { 
+        color: hsl(190, 20%, 30%) 
     }
 }
 
@@ -180,10 +208,22 @@ header {
         h4 {
             font-size: 22px;
             color: #800;
+
+            a {
+                text-decoration: none;
+                font-size: 80%;
+                background: rgba(192, 0, 0, .1);
+                color: #800;
+                padding: 2px 4px;
+
+                .border-radius(4px);
+            }
         }
 
         .syntax {
             background: none;
+
+            .clearfix;
         }
 
         &#variables-colors {

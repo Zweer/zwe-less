@@ -15,8 +15,6 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-        <link href="http://pygments.org/media/pygments_style.css" rel="stylesheet" type="text/css">
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -50,6 +48,7 @@
                         <a href="#vendor">Vendor Mixins</a>
                         <ul>
                             <li><a href="#vendor-backface">Backface Visibility</a></li>
+                            <li><a href="#vendor-border-image">Border Image</a></li>
                         </ul>
                     </li>
             	</ul>
@@ -93,33 +92,99 @@
                 </ul>
 
                 <div class="syntax">
-                    <pre class="less"><span class="o">//</span><span class="nt">Grayscale</span>
-<span class="k">@black-10</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">10</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#e6e6e6</span>
-<span class="k">@black-20</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">20</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#ccc</span>
-<span class="k">@black-30</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">30</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#b3b3b3</span>
-<span class="k">@black-40</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">40</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#999</span>
-<span class="k">@black-50</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">50</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#808080</span>
-<span class="k">@black-60</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">60</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#666</span>
-<span class="k">@black-70</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">70</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#4d4d4d</span>
-<span class="k">@black-80</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">80</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#333</span>
-<span class="k">@black-90</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">90</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#191919</span></pre>
+<pre class="less">//Grayscale
+@black-10: darken(#fff, 10%); // #e6e6e6
+@black-20: darken(#fff, 20%); // #ccc
+@black-30: darken(#fff, 30%); // #b3b3b3
+@black-40: darken(#fff, 40%); // #999
+@black-50: darken(#fff, 50%); // #808080
+@black-60: darken(#fff, 60%); // #666
+@black-70: darken(#fff, 70%); // #4d4d4d
+@black-80: darken(#fff, 80%); // #333
+@black-90: darken(#fff, 90%); // #191919
+</pre>
                 </div>
 
                 For example one of the above squares is colorized in this way:
 
                 <div class="syntax">
-                    <pre class="less half first"><span class="nc">.black-10</span> <span class="p">{</span>
-    <span class="k">background</span><span class="o">:</span> <span class="o">@</span><span class="nb">black</span><span class="m">-10</span><span class="p">;</span>
-<span class="p">}</span></pre>
-                    <pre class="css half second"><span class="nc">.black-10</span> <span class="p">{</span>
-    <span class="k">background</span><span class="o">:</span> <span class="m">#e6e6e6</span><span class="p">;</span>
-<span class="p">}</span></pre>
+                    <pre class="less half first">.black-10 {
+    background: @black-10;
+}</pre>
+                    <pre class="css half second">.black-10 {
+    background: #e6e6e6;
+}</pre>
+                </div>
+            </section>
+
+            <section id="vendor">
+                <h3>Vendor Mixins</h3>
+                With all these browsers out there, writing prefixed properties can be really painfull. <strong>ZweLess</strong> allows you to write single-line mixins instead of multi-line properties, leaving you more time to design!
+                <br><br>
+                By default all these mixins use the default w3c parameter.
+            </section>
+
+            <section id="vendor-backface">
+                <h4>Backface Visibility (<a href="http://www.w3schools.com/cssref/css3_pr_backface-visibility.asp" target="_blank">w3c</a>)</h4>
+                Possible values are: <code>visible</code> <em>(default)</em> and <code>hidden</code>
+                <div class="syntax">
+                    <pre class="less">.backface-visibility(@visibility: visible) {
+    -webkit-backface-visibility: @visibility;
+       -moz-backface-visibility: @visibility;
+        -ms-backface-visibility: @visibility;
+            backface-visibility: @visibility;
+}
+</pre>
+                </div>
+
+                Example:
+                <div class="syntax">
+                    <pre class="less">.test-backface-visibility {
+    .backface-visibility(hidden);
+}
+</pre>
+                    <pre class="css">.test-backface-visibility {
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+</pre>
+                </div>
+            </section>
+
+            <section id="vendor-border-image">
+                <h4>Border Image(<a href="http://www.w3schools.com/cssref/css3_pr_border-image.asp" target="_blank">w3c</a>)</h4>
+                <div class="syntax">
+                    <pre>.border-image(@image: none) {
+    -webkit-border-image: @image;
+         -o-border-image: @image;
+            border-image: @image;
+}
+</pre>
+                </div>
+
+                Example:
+                <div class="syntax">
+                    <pre class="less">.test-border-image {
+    .border-image(url(border.png) 30 30 round);
+}
+</pre>
+                    <pre class="css">.test-border-image {
+  -webkit-border-image: url(border.png) 30 30 round;
+       -o-border-image: url(border.png) 30 30 round;
+          border-image: url(border.png) 30 30 round;
+}
+</pre>
                 </div>
             </section>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/hiless.js"></script>
+
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

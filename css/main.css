@@ -48,7 +48,6 @@ code {
   padding: 2px 4px;
   font-size: 90%;
   color: #800;
-  white-space: nowrap;
   background-color: rgba(192, 0, 0, 0.1);
   border-radius: 4px;
   background-clip: padding-box;
@@ -93,6 +92,48 @@ pre.half {
 
 pre.half.second {
   margin-left: 2%;
+}
+
+pre .attribute {
+  color: #735926;
+}
+
+pre .variable {
+  color: #455445;
+}
+
+pre .element {
+  color: #3d5c57;
+}
+
+pre .string,
+pre .regexp {
+  color: #70862d;
+}
+
+pre .class {
+  font-weight: normal;
+  color: #6b572e;
+}
+
+pre .id {
+  font-weight: normal;
+  color: #6b612e;
+}
+
+pre .comment {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+pre .number,
+pre .color {
+  color: #6b382e;
+}
+
+pre .class,
+pre .mixin,
+pre .special {
+  color: #3d575c;
 }
 
 header {
@@ -198,8 +239,28 @@ header hgroup a#download {
   color: #800;
 }
 
+.container section h4 a {
+  padding: 2px 4px;
+  font-size: 80%;
+  color: #800;
+  text-decoration: none;
+  background: rgba(192, 0, 0, 0.1);
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+
 .container section .syntax {
   background: none;
+}
+
+.container section .syntax:before,
+.container section .syntax:after {
+  display: table;
+  content: " ";
+}
+
+.container section .syntax:after {
+  clear: both;
 }
 
 .container section#variables-colors .grayscale {
