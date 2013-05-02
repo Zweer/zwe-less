@@ -15,6 +15,8 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
+        <link href="http://pygments.org/media/pygments_style.css" rel="stylesheet" type="text/css">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -38,6 +40,18 @@
             	<ul>
             		<li><a href="#introduction">Introduction</a></li>
             		<li><a href="#installation">Installation</a></li>
+                    <li>
+                        <a href="#variables">Variables</a>
+                        <ul>
+                            <li><a href="#variables-colors">Colors</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#vendor">Vendor Mixins</a>
+                        <ul>
+                            <li><a href="#vendor-backface">Backface Visibility</a></li>
+                        </ul>
+                    </li>
             	</ul>
             </nav>
 
@@ -53,6 +67,52 @@
         		<br>
         		Now you can start using all the mixins and variables provided by <strong>ZweLess</strong>
         	</section>
+
+            <section id="variables">
+                <h3>Variables</h3>
+                CSS doesn't have variables, but LESS does, and we try to take advantages of this feature to provide everything a designer wants.
+            </section>
+
+            <section id="variables-colors">
+                <h4>Colors</h4>
+                Variables for colors could be too much, so we provide only grayscale: from <code>#000</code> to <code>#fff</code> in steps of 10%:
+
+                <ul class="grayscale">
+                    <li class="black-10"></li>
+                    <li class="black-20"></li>
+                    <li class="black-30"></li>
+                    <li class="black-40"></li>
+                    <li class="black-50"></li>
+                    <li class="black-60"></li>
+                    <li class="black-70"></li>
+                    <li class="black-80"></li>
+                    <li class="black-90"></li>
+                </ul>
+
+                <div class="syntax">
+                    <pre class="less"><span class="o">//</span><span class="nt">Grayscale</span>
+<span class="k">@black-10</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">10</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#e6e6e6</span>
+<span class="k">@black-20</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">20</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#ccc</span>
+<span class="k">@black-30</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">30</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#b3b3b3</span>
+<span class="k">@black-40</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">40</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#999</span>
+<span class="k">@black-50</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">50</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#808080</span>
+<span class="k">@black-60</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">60</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#666</span>
+<span class="k">@black-70</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">70</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#4d4d4d</span>
+<span class="k">@black-80</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">80</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#333</span>
+<span class="k">@black-90</span><span class="o">:</span> <span class="nt">darken</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span> <span class="nt">90</span><span class="o">%)</span><span class="p">;</span> <span class="o">//</span> <span class="nf">#191919</span></pre>
+                </div>
+
+                For example one of the above squares is colorized in this way:
+
+                <div class="syntax">
+                    <pre class="less half first"><span class="nc">.black-10</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="o">@</span><span class="nb">black</span><span class="m">-10</span><span class="p">;</span>
+<span class="p">}</span></pre>
+                    <pre class="css half second"><span class="nc">.black-10</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#e6e6e6</span><span class="p">;</span>
+<span class="p">}</span></pre>
+                </div>
+            </section>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

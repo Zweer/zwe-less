@@ -30,10 +30,53 @@ code {
     color: #800;
     background-color: rgba(192, 0, 0, .1);
     padding: 2px 4px;
-    font-size: 9sssssssssssssssssssssssssssssssss0%;
+    font-size: 90%;
     white-space: nowrap;
 
     .border-radius(4px);
+}
+
+pre {
+    background-color: #f0f0f0;
+    padding: 15px;
+    font-size: 90%;
+    margin: 10px 0;
+    border: 1px solid rgba(128, 128, 128, .5);
+    position: relative;
+
+    .border-radius(4px);
+
+    &.less,
+    &.css {
+        &:before {
+            content: "less";
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            font-size: 12px;
+            background: rgba(192, 0, 0, .1);
+            color: #800;
+            padding: 2px 4px;
+
+            .border-radius(4px);
+        }
+    }
+    &.css {
+        &:before {
+            content: "css";
+        }
+    }
+
+    &.half {
+        width: 49%;
+        float: left;
+
+        .box-sizing(border-box);
+
+        &.second {
+            margin-left: 2%;
+        }
+    }
 }
 
 header {
@@ -94,26 +137,34 @@ header {
             padding: 0;
 
             li {
-                padding: 5px 20px;
                 border-top: 1px solid rgba(0, 0, 0, .2);
 
                 &:first-child {
-                    border-top: 0;
-                }
-
-                &:hover {
-                    background-color: #b00;
-                    color: white;
-
-                    a {
-                        color: white;
-                    }
+                    border-top-width: 0;
                 }
 
                 a {
                     text-decoration: none;
                     display: block;
                     color: black;
+                    padding: 5px 20px;
+
+                    &:hover {
+                        background: #b00;
+                        color: white;
+                    }
+                }
+
+                ul {
+                    li {
+                        &:first-child {
+                            border-top-width: 1px;
+                        }
+
+                        a {
+                            padding-left: 40px;
+                        }
+                    }
                 }
             }
         }
@@ -125,6 +176,59 @@ header {
         h3 {
             font-size: 24px;
             color: #800;
+        }
+        h4 {
+            font-size: 22px;
+            color: #800;
+        }
+
+        .syntax {
+            background: none;
+        }
+
+        &#variables-colors {
+            .grayscale {
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    float: left;
+                    margin-left: 2px;
+
+                    .size(70px);
+                    .border-radius(4px);
+
+                    &.black-10 {
+                        background: @black-10;
+                    }
+                    &.black-20 {
+                        background: @black-20;
+                    }
+                    &.black-30 {
+                        background: @black-30;
+                    }
+                    &.black-40 {
+                        background: @black-40;
+                    }
+                    &.black-50 {
+                        background: @black-50;
+                    }
+                    &.black-60 {
+                        background: @black-60;
+                    }
+                    &.black-70 {
+                        background: @black-70;
+                    }
+                    &.black-80 {
+                        background: @black-80;
+                    }
+                    &.black-90 {
+                        background: @black-90;
+                    }
+                }
+            }
         }
     }
 }
