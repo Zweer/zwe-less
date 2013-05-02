@@ -85,3 +85,48 @@ header hgroup a#download {
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.71), inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 0 3px rgba(0, 0, 0, 0.43), inset 0 0 2px rgba(255, 255, 255, 0.25);
   background-clip: padding-box;
 }
+
+.container {
+  display: block;
+  width: 980px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container nav {
+  float: left;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+
+.container nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container nav ul li {
+  padding: 5px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container nav ul li:first-child {
+  border-top: 0;
+}
+
+.container nav ul li:hover {
+  color: white;
+  background-color: #b00;
+}
+
+.container nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+.container section {
+  margin-left: 330px;
+}

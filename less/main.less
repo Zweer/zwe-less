@@ -67,3 +67,47 @@ header {
         }
     }
 }
+
+.container {
+    width: 980px;
+    margin-top: 20px;
+
+    .center-block;
+
+    nav {
+        float: left;
+        width: 300px;
+        border: 1px solid rgba(0, 0, 0, .2);
+
+        .border-radius(5px);
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 5px 20px;
+                border-top: 1px solid rgba(0, 0, 0, .2);
+
+                &:first-child {
+                    border-top: 0;
+                }
+
+                &:hover {
+                    background-color: #b00;
+                    color: white;
+                }
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    section {
+        margin-left: 330px;
+    }
+}
