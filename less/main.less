@@ -5,6 +5,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+    font-size: 14px;
 }
 
 h1,
@@ -18,15 +19,21 @@ h6 {
 }
 
 a {
-    color: inherit;
-
-    &:hover {
-        color: inherit;
-    }
+    color: #800;
 }
 
 strong {
 	font-family: 'Titillium Web', sans-serif;
+}
+
+code {
+    color: #800;
+    background-color: rgba(192, 0, 0, .1);
+    padding: 2px 4px;
+    font-size: 9sssssssssssssssssssssssssssssssss0%;
+    white-space: nowrap;
+
+    .border-radius(4px);
 }
 
 header {
@@ -97,11 +104,16 @@ header {
                 &:hover {
                     background-color: #b00;
                     color: white;
+
+                    a {
+                        color: white;
+                    }
                 }
 
                 a {
                     text-decoration: none;
                     display: block;
+                    color: black;
                 }
             }
         }
@@ -109,5 +121,10 @@ header {
 
     section {
         margin-left: 330px;
+
+        h3 {
+            font-size: 24px;
+            color: #800;
+        }
     }
 }
