@@ -37,18 +37,36 @@
             <nav role="main">
             	<ul>
             		<li><a href="#introduction">Introduction</a></li>
+
             		<li><a href="#installation">Installation</a></li>
+
                     <li>
                         <a href="#variables">Variables</a>
                         <ul>
                             <li><a href="#variables-colors">Colors</a>
                         </ul>
                     </li>
+
                     <li>
                         <a href="#vendor">Vendor Mixins</a>
                         <ul>
                             <li><a href="#vendor-backface">Backface Visibility</a></li>
                             <li><a href="#vendor-border-image">Border Image</a></li>
+                            <li><a href="#vendor-border-radius">Border Radius</a></li>
+                            <li><a href="#vendor-box-shadow">Box Shadow</a></li>
+                            <li><a href="#vendor-box-sizing">Box Sizing</a></li>
+                            <li><a href="#vendor-opacity">Opacity</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#utilities">Utilities</a>
+                        <ul>
+                            <li><a href="#utilities-center-block">Center Block</a></li>
+                            <li><a href="#utilities-clearfix">Clearfix</a></li>
+                            <li><a href="#utilities-font-face">Font Face</a></li>
+                            <li><a href="#utilities-size">Size</a></li>
+                            <li><a href="#utilities-text-truncate">Text Truncate</a></li>
                         </ul>
                     </li>
             	</ul>
@@ -109,10 +127,10 @@
 
                 <div class="syntax">
                     <pre class="less half first">.black-10 {
-    background: @black-10;
+  background: @black-10;
 }</pre>
                     <pre class="css half second">.black-10 {
-    background: #e6e6e6;
+  background: #e6e6e6;
 }</pre>
                 </div>
             </section>
@@ -129,10 +147,10 @@
                 Possible values are: <code>visible</code> <em>(default)</em> and <code>hidden</code>
                 <div class="syntax">
                     <pre class="less">.backface-visibility(@visibility: visible) {
-    -webkit-backface-visibility: @visibility;
-       -moz-backface-visibility: @visibility;
-        -ms-backface-visibility: @visibility;
-            backface-visibility: @visibility;
+  -webkit-backface-visibility: @visibility;
+     -moz-backface-visibility: @visibility;
+      -ms-backface-visibility: @visibility;
+          backface-visibility: @visibility;
 }
 </pre>
                 </div>
@@ -140,7 +158,7 @@
                 Example:
                 <div class="syntax">
                     <pre class="less">.test-backface-visibility {
-    .backface-visibility(hidden);
+  .backface-visibility(hidden);
 }
 </pre>
                     <pre class="css">.test-backface-visibility {
@@ -157,9 +175,9 @@
                 <h4>Border Image (<a href="http://www.w3schools.com/cssref/css3_pr_border-image.asp" target="_blank">w3c</a>)</h4>
                 <div class="syntax">
                     <pre>.border-image(@image: none) {
-    -webkit-border-image: @image;
-         -o-border-image: @image;
-            border-image: @image;
+  -webkit-border-image: @image;
+       -o-border-image: @image;
+          border-image: @image;
 }
 </pre>
                 </div>
@@ -167,13 +185,298 @@
                 Example:
                 <div class="syntax">
                     <pre class="less">.test-border-image {
-    .border-image(url(border.png) 30 30 round);
+  .border-image(url(border.png) 30 30 round);
 }
 </pre>
                     <pre class="css">.test-border-image {
   -webkit-border-image: url(border.png) 30 30 round;
        -o-border-image: url(border.png) 30 30 round;
           border-image: url(border.png) 30 30 round;
+}
+</pre>
+                </div>
+            </section>
+
+            <section id="vendor-border-radius">
+                <h4>Border Radius (<a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" target="_blank">w3c</a>)</h4>
+                Border Radius is supported by all major browsers. Sometimes, however, it doesn't display correctly the background. A <code>background-clip: padding-box</code> is applied to fix it.
+                <div class="syntax">
+                    <pre class="less">.border-radius(@radius: 0) {
+    border-radius: @radius;
+  background-clip: padding-box;
+}
+</pre>
+                </div>
+
+                The same behaviour is applied to the single corners:
+                <div class="syntax">
+                    <pre class="less">.border-top-left-radius(@radius: 0) {
+  border-top-left-radius: @radius;
+         background-clip: padding-box;
+}
+
+.border-top-right-radius(@radius: 0) {
+  border-top-right-radius: @radius;
+          background-clip: padding-box;
+}
+
+.border-bottom-right-radius(@radius: 0) {
+  border-bottom-right-radius: @radius;
+             background-clip: padding-box;
+}
+
+.border-bottom-left-radius(@radius: 0) {
+  border-bottom-left-radius: @radius;
+            background-clip: padding-box;
+}
+</pre>
+                </div>
+
+                Example: 
+                <div class="syntax">
+                    <pre class="less half first">.test-border-radius {
+  .border-radius(25px);
+}
+</pre>
+                    <pre class="css half second">.test-border-radius {
+  border-radius: 25px;
+  background-clip: padding-box;
+}
+</pre>
+                </div>
+
+                Moreover there are mixins to aggregate more corners:
+                <div class="syntax">
+                    <pre class="less">.border-top-radius(@radius: 0) {
+   .border-top-left-radius(@radius);
+  .border-top-right-radius(@radius);
+}
+
+.border-right-radius(@radius: 0) {
+     .border-top-right-radius(@radius);
+  .border-bottom-right-radius(@radius);
+}
+
+.border-bottom-radius(@radius: 0) {
+   .border-bottom-left-radius(@radius);
+  .border-bottom-right-radius(@radius);
+}
+
+.border-left-radius(@radius: 0) {
+     .border-top-left-radius(@radius);
+  .border-bottom-left-radius(@radius);
+}
+</pre>
+                </div>
+
+                Example:
+                <div class="syntax">
+                    <pre class="less">.test-border-top-radius {
+    .border-top-radius(10px);
+}
+</pre>
+                    <pre class="css">.test-border-top-radius {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-clip: padding-box;
+}
+</pre>
+                </div>
+
+                As you can see, LESS automatically removes the duplicated <code>background-clip</code>
+            </section>
+
+            <section id="vendor-box-shadow">
+                <h4>Box Shadow (<a href="http://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">w3c</a>)</h4>
+                <div class="syntax">
+                    <pre class="less">.box-shadow(@shadow: none) {
+  -webkit-box-shadow: @shadow; // iOS < 5 & Android < 4 & Blackberry 7
+          box-shadow: @shadow;
+}
+</pre>
+                </div>
+
+                Example:
+                <div class="syntax">
+                    <pre class="less">.test-box-shadow {
+  .box-shadow(10px 10px 5px #888);
+}
+</pre>
+                    <pre class="css">.test-box-shadow {
+  -webkit-box-shadow: 10px 10px 5px #888888;
+          box-shadow: 10px 10px 5px #888888;
+}
+</pre>
+                </div>
+
+                You can also put different shadows in the single mixin by simply escaping it:
+                <div class="syntax">
+                    <pre class="less">.test-box-shadow {
+  .box-shadow(~"0 1px 10px #000, inset 0 -2px 5px red");
+}
+</pre>
+                    <pre class="css">.test-box-shadow {
+  -webkit-box-shadow: 0 1px 10px #000000, inset 0 -2px 5px #ff0000;
+          box-shadow: 0 1px 10px #000000, inset 0 -2px 5px #ff0000;
+}
+</pre>
+                </div>
+            </section>
+
+            <section id="vendor-box-sizing">
+                <h4>Box Sizing (<a href="http://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank">w3c</a>)</h4>
+                <div class="syntax">
+                    <pre class="less">.box-sizing(@box-model: content-box) {
+  -webkit-box-sizing: @box-model; // iOS < 5 & Android < 4 & Blackberry 7
+     -moz-box-sizing: @box-model;
+          box-sizing: @box-model;
+}
+</pre>
+                </div>
+
+                Example:
+                <div class="syntax">
+                    <pre class="less half first">.test-box-sizing {
+  .box-sizing(border-box);
+}
+</pre>
+                    <pre class="css half second">.test-box-sizing {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+</pre>
+                </div>
+            </section>
+
+            <section id="vendor-opacity">
+                <h4>Opacity (<a href="http://www.w3schools.com/cssref/css3_pr_opacity.asp" target="_blank">w3c</a>)</h4>
+                The <code>opacity</code> property doesn't have vendor prefixes, but it isn't compatible with IE8 and earlier versions. To extend this compatibility the <code>alpha</code> filter is used.
+                <div class="syntax">
+                    <pre class="less">.opacity(@opacity: 1) {
+  opacity: @opacity;
+
+  @opacity-ie: @opacity * 100;
+  filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
+</pre>
+                </div>
+
+                Example:
+                <div class="syntax">
+                    <pre class="less half first">.test-opacity {
+  .opacity(.5);
+}
+</pre>
+                    <pre class="css half second">.test-opacity {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+</pre>
+                </div>
+            </section>
+
+            <section id="utilities">
+                <h3>Utilities</h3>
+                How many times have you been in the situation to add the "clearfix" class in a project? Or jumping to <a href="http://www.fontsquirrel.com/" target="_blank"><strong>Font Squirrel</strong></a> to remember how <code>font-face</code> works?
+                <br><br>
+                These mixins try to provide you all these functions you are going to use at least once per project.
+            </section>
+
+            <section id="utilities-center-block">
+                <h4>Center Block</h4>
+                Centers something in the page/container. It must be displayed as a <code>block</code>, so the <code>display: block</code> property is automatically added.
+                <div class="syntax">
+                    <pre class="less">.center-block {
+       display: block;
+
+   margin-left: auto;
+  margin-right: auto;
+}
+</pre>
+                </div>
+
+                As you can see, this mixin is more a class than a real mixin, so that you can use it also in the html of your project.
+            </section>
+
+            <section id="utilities-clearfix">
+                <h4>Clearfix (<a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">source</a>)</h4>
+                Adding an empty <code>div</code> to clear the floating elements is always really bad practice. With this class we put it in the container block to clear all the elements inside.
+                <div class="syntax">
+                    <pre class="less">.clearfix {
+  *zoom: 1; // 3
+
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+</pre>
+                </div>
+            </section>
+
+            <section id="utilities-font-face">
+                <h4>Font Face</h4>
+                This mixin is more a shortcut than anything else: writing every time all the sources of a font is really boring and many times we do forget something:
+                <div class="syntax">
+                    <pre class="less">.font-face(@font-name, @font-file, @font-weight: normal, @font-style: normal) {
+  @font-face {
+    font-family: "@{font-name}";
+    src: url("@{font-file}-webfont.eot");
+    src: url("@{font-file}-webfont.eot?#iefix") format("embedded-opentype"),
+         url("@{font-file}-webfont.woff") format("woff"),
+         url("@{font-file}-webfont.ttf") format("truetype"),
+         url("@{font-file}-webfont.svg#@{font-name}") format("svg");
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
+}
+</pre>
+                </div>
+            </section>
+
+            <section id="utilities-size">
+                <h4>Size</h4>
+                This mixin stylizes the size of a block (<code>display: block</code> is usually needed).
+                <div class="syntax">
+                    <pre class="less">.size(@width, @height) {
+   width: @width;
+  height: @height;
+}
+</pre>
+                </div>
+
+                If only one argument is passed, the mixin uses that <code>@width</code> also for the <code>@height</code>, like a square:
+                <div class="syntax">
+                    <pre class="less">.size(@square) {
+  .size(@square, @square);
+}
+</pre>
+                </div>
+            </section>
+
+            <section id="utilities-text-truncate">
+                <h4>Text Truncate</h4>
+                When you want to truncate the text, you have to put other properties to make it happen without problems. This mixin put them automatically.
+                <br><br>
+                For it to happen you have to stylize the element as a <code>block</code> or an <code>inline-block</code>
+                <div class="syntax">
+                    <pre class="less">.text-truncate(@truncate-model: clip) {
+       overflow: hidden;
+  text-overflow: @truncate-model;
+    white-space: nowrap;
+}
+</pre>
+                </div>
+
+                To make design easier there is also a class usable directly in the HTML, that truncates the text with the <code>ellipsis</code> property:
+                <div class="syntax">
+                    <pre class="less">.text-truncate {
+  .text-truncate(ellipsis);
 }
 </pre>
                 </div>
