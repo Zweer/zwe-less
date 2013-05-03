@@ -20,6 +20,8 @@
 // - Box Sizing
 // 
 // - Opacity
+// 
+// - Transition
 
 // Backface Visibility
 .backface-visibility(@visibility: visible) {
@@ -29,7 +31,7 @@
           backface-visibility: @visibility;
 }
 
-// Border Radius
+// Border
 // Border Image
 .border-image(@image: none) {
   -webkit-border-image: @image; // Safari <= 5.1 & iOS < 6 & Android & Blackberry 7
@@ -102,4 +104,11 @@
 
   @opacity-ie: @opacity * 100;
   filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
+
+// Transitions
+// Transition
+.transition(@transition: all 0 ease 0) {
+  -webkit-transition: @transition; // Chrome < 26 && Safari && iOS && Android && Blackberry
+          transition: @transition;
 }
