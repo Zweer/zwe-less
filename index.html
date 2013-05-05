@@ -56,6 +56,9 @@
                             <li><a href="#vendor-box-shadow">Box Shadow</a></li>
                             <li><a href="#vendor-box-sizing">Box Sizing</a></li>
                             <li><a href="#vendor-opacity">Opacity</a></li>
+                            <li><a href="#vendor-transform">Transform</a></li>
+                            <li><a href="#vendor-transform-origin">Transform Origin</a></li>
+                            <li><a href="#vendor-transform-style">Transform Style</a></li>
                         </ul>
                     </li>
 
@@ -374,6 +377,93 @@
 }
 </pre>
                 </div>
+            </section>
+
+            <section id="vendor-transform">
+              <h4>Transform (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.transform(@transform: none) {
+  -webkit-transform: @transform; // Chrome && Safari && iOS && Android
+     -moz-transform: @transform; // Firefox < 16
+      -ms-transform: @transform; // IE 9
+       -o-transform: @transform; // Opera < 12.1
+          transform: @transform;
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less half first">.test-transform {
+  .transform(rotate(7deg));
+}
+</pre>
+                <pre class="css half second">.test-transform {
+  -webkit-transform: rotate(7deg);
+     -moz-transform: rotate(7deg);
+      -ms-transform: rotate(7deg);
+       -o-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-origin">
+              <h4>Transform Origin (<a href="http://www.w3schools.com/cssref/css3_pr_transform-origin.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.transform-origin(@origin: 50% 50% 0) {
+  -webkit-transform-origin: @origin; // Chrome && Safari && iOS && Android
+     -moz-transform-origin: @origin; // Firefox < 16
+      -ms-transform-origin: @origin; // IE 9
+       -o-transform-origin: @origin; // Opera < 12.1
+          transform-origin: @origin;
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-transform-origin {
+  .transform-origin(20% 40%);
+}
+</pre>
+                <pre class="css">.test-transform-origin {
+  -webkit-transform-origin: 20% 40%;
+     -moz-transform-origin: 20% 40%;
+      -ms-transform-origin: 20% 40%;
+       -o-transform-origin: 20% 40%;
+          transform-origin: 20% 40%;
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-style">
+              <h4>Transform Style (<a href="http://www.w3schools.com/cssref/css3_pr_transform-style.asp" target="_blank">w3c</a>)</h4>
+              Because Opera and Internet Explorer don't support 3D transformations, this mixin doesn't include their prefixes
+              <div class="syntax">
+                <pre class="less">.transform-style(@style: flat) {
+  -webkit-transform-style: @style; // Chrome && Safari && iOS && Android
+     -moz-transform-style: @style; // Firefox < 16
+          transform-style: @style;
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-transform-style {
+  .transform-style(preserve-3d);
+}
+</pre>
+                <pre class="css">.test-transform-style {
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+</pre>
+              </div>
             </section>
 
             <section id="utilities">
