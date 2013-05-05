@@ -30,6 +30,8 @@
 //
 // - Transform
 // -- Transform
+// -- Transform Origin
+// -- Transform Style
 
 // Backface Visibility
 .backface-visibility(@visibility: visible) {
@@ -159,4 +161,16 @@
       -ms-transform: @transform; // IE 9
        -o-transform: @transform; // Opera < 12.1
           transform: @transform;
+}// Transform Origin
+.transform-origin(@origin: 50% 50% 0) {
+  -webkit-transform-origin: @origin; // Chrome && Safari && iOS && Android && Blackberry
+     -moz-transform-origin: @origin; // Firefox < 16
+      -ms-transform-origin: @origin; // IE 9
+       -o-transform-origin: @origin; // Opera < 12.1
+          transform-origin: @origin;
+}// Transform Style
+.transform-style(@style: flat) {
+  -webkit-transform-style: @style; // Chrome && Safari && iOS && Android && Blackberry
+     -moz-transform-style: @style; // Firefox < 16
+          transform-style: @style;
 }
