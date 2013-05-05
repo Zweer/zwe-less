@@ -26,6 +26,7 @@
 // -- Transition Delay
 // -- Transition Duration
 // -- Transition Property
+// -- Transition Timing Function
 
 // Backface Visibility
 .backface-visibility(@visibility: visible) {
@@ -138,4 +139,11 @@
      -moz-transition-property: @property; // Firefox < 16
        -o-transition-property: @property; // Opera / Opera Mobile <= 12
           transition-property: @property;
+}
+// Transition Timing Function
+.transition-timing-function(@function: ease) {
+  -webkit-transition-timing-function: @function; // Chrome < 26 && Safari && iOS && Android && Blackberry
+     -moz-transition-timing-function: @function; // Firefox < 16
+       -o-transition-timing-function: @function; // Opera / Opera Mobile <= 12
+          transition-timing-function: @function;
 }
