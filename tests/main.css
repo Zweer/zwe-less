@@ -119,6 +119,28 @@ body {
   filter: alpha(opacity=50);
 }
 
+.test-transform {
+  -webkit-transform: rotate(7deg);
+     -moz-transform: rotate(7deg);
+      -ms-transform: rotate(7deg);
+       -o-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.test-transform-origin {
+  -webkit-transform-origin: 20% 40%;
+     -moz-transform-origin: 20% 40%;
+      -ms-transform-origin: 20% 40%;
+       -o-transform-origin: 20% 40%;
+          transform-origin: 20% 40%;
+}
+
+.test-transform-style {
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
 @font-face {
   font-family: "Open Sans";
   font-style: italic;
