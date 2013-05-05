@@ -27,6 +27,9 @@
 // -- Transition Duration
 // -- Transition Property
 // -- Transition Timing Function
+//
+// - Transform
+// -- Transform
 
 // Backface Visibility
 .backface-visibility(@visibility: visible) {
@@ -146,4 +149,14 @@
      -moz-transition-timing-function: @function; // Firefox < 16
        -o-transition-timing-function: @function; // Opera / Opera Mobile <= 12
           transition-timing-function: @function;
+}
+
+// Transform
+// Transform
+.transform(@transform: none) {
+  -webkit-transform: @transform; // Chrome && Safari && iOS && Android && Blackberry
+     -moz-transform: @transform; // Firefox < 16
+      -ms-transform: @transform; // IE 9
+       -o-transform: @transform; // Opera < 12.1
+          transform: @transform;
 }
