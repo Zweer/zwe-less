@@ -381,13 +381,20 @@
 
             <section id="vendor-transform">
               <h4>Transform (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              Since IE and Opera do not support 3D transformations, we have divided 3D from 2D prefixes:
               <div class="syntax">
-                <pre class="less">.transform(@transform: none) {
+                <pre class="less">.transform3d(@transform: none) {
   -webkit-transform: @transform; // Chrome && Safari && iOS && Android
      -moz-transform: @transform; // Firefox < 16
-      -ms-transform: @transform; // IE 9
-       -o-transform: @transform; // Opera < 12.1
           transform: @transform;
+}
+</pre>
+              </div>
+              <div class="syntax">
+                <pre class="less">.transform(@transform: none) {
+  -ms-transform: @transform; // IE 9
+   -o-transform: @transform; // Opera < 12.1
+     .transform3d(@transform);
 }
 </pre>
               </div>
@@ -403,6 +410,18 @@
      -moz-transform: rotate(7deg);
       -ms-transform: rotate(7deg);
        -o-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+</pre>
+              </div>
+              <div class="syntax">
+                <pre class="less half first">.test-transform3d {
+  .transform3d(rotate(7deg));
+}
+</pre>
+                <pre class="css half second">.test-transform3d {
+  -webkit-transform: rotate(7deg);
+     -moz-transform: rotate(7deg);
           transform: rotate(7deg);
 }
 </pre>
