@@ -127,6 +127,12 @@ body {
           transform: rotate(7deg);
 }
 
+.test-transform3d {
+  -webkit-transform: rotate(7deg);
+     -moz-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
 .test-transform-origin {
   -webkit-transform-origin: 20% 40%;
      -moz-transform-origin: 20% 40%;
