@@ -30,6 +30,7 @@
 //
 // - Transform
 // -- Transform
+// -- Transform 3D
 // -- Transform Origin
 // -- Transform Style
 
@@ -156,10 +157,14 @@
 // Transform
 // Transform
 .transform(@transform: none) {
+  -ms-transform: @transform;
+   -o-transform: @transform; // Opera < 12.1
+     .transform(@transform);
+}
+// Transform 3D
+.transform3d(@transform: none) {
   -webkit-transform: @transform; // Chrome && Safari && iOS && Android && Blackberry
      -moz-transform: @transform; // Firefox < 16
-      -ms-transform: @transform; // IE 9
-       -o-transform: @transform; // Opera < 12.1
           transform: @transform;
 }
 // Transform Origin
