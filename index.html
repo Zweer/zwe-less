@@ -518,6 +518,156 @@
               </div>
             </section>
 
+            <section id="vendor-transform-matrix3d">
+              <h4>Matrix 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.matrix3d(@n0: 0, @n1: 0, @n2: 0, @n3: 0, @n4: 0, @n5: 0, @n6: 0, @n7: 0, @n8: 0, @n9: 0, @na: 0, @nb: 0, @nc: 0, @nd: 0, @ne: 0, @nf: 0) {
+  .transform3d(~"matrix3d(@{n0}, @{n1}, @{n2}, @{n3}, @{n4}, @{n5}, @{n6}, @{n7}, @{n8}, @{n9}, @{na}, @{nb}, @{nc}, @{nd}, @{ne}, @{nf})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-matrix3d {
+  .matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
+}
+</pre>
+                <pre class="css">.test-matrix3d {
+  -webkit-transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
+     -moz-transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
+          transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-matrix">
+              <h4>Translate (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.translate(@x: 0, @y: 0) {
+  .transform(~"translate(@{x}, @{y})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-translate {
+  .translate(10px, 3px);
+}
+</pre>
+                <pre class="css">.test-translate {
+  -webkit-transform: translate(10px, 3px);
+     -moz-transform: translate(10px, 3px);
+      -ms-transform: translate(10px, 3px);
+       -o-transform: translate(10px, 3px);
+          transform: translate(10px, 3px);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-matrix3d">
+              <h4>Translate 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.translate3d(@x: 0, @y: 0, @z: 0) {
+  .transform3d(~"translate3d(@{x}, @{y}, @{z})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-translate3d {
+  .translate3d(10px, 3px, 20px);
+}
+</pre>
+                <pre class="css">.test-translate3d {
+  -webkit-transform: translate3d(10px, 3px, 20px);
+     -moz-transform: translate3d(10px, 3px, 20px);
+          transform: translate3d(10px, 3px, 20px);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-matrix">
+              <h4>Translate X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.translateX(@x: 0) {
+  .transform(~"translateX(@{x})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-translateX {
+  .translateX(10px);
+}
+</pre>
+                <pre class="css">.test-translateX {
+  -webkit-transform: translateX(10px);
+     -moz-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+       -o-transform: translateX(10px);
+          transform: translateX(10px);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-matrix">
+              <h4>Translate Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.translateY(@y: 0) {
+  .transform(~"translateY(@{y})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-translateY {
+  .translateY(3px);
+}
+</pre>
+                <pre class="css">.test-translateY {
+  -webkit-transform: translateY(3px);
+     -moz-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+       -o-transform: translateY(3px);
+          transform: translateY(3px);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-matrix3d">
+              <h4>Translate Z (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.translateZ(@z: 0) {
+  .transform3d(~"translateZ(@{z})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-translateZ {
+  .translateZ(20px);
+}
+</pre>
+                <pre class="css">.test-translateZ {
+  -webkit-transform: translateZ(20px);
+     -moz-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+</pre>
+              </div>
+            </section>
+
             <section id="utilities">
                 <h3>Utilities</h3>
                 How many times have you been in the situation to add the "clearfix" class in a project? Or jumping to <a href="http://www.fontsquirrel.com/" target="_blank"><strong>Font Squirrel</strong></a> to remember how <code>font-face</code> works?
