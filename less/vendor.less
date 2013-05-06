@@ -209,3 +209,14 @@
 .translateZ(@z: 0) {
   .transform3d(~"translateZ(@{z})");
 }
+// Scale
+.scale(@x: 1) {
+  .transform(~"scale(@{x})");
+}
+.scale(@x, @y) {
+  .transform(~"scale(@{x}, @{y})");
+}
+// Scale 3D
+.scale3d(@x: 1, @y: 1, @z: 1) {
+  .transform3d(~"scale3d(@{x}, @{y}, @{z})");
+}
