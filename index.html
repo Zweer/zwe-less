@@ -742,6 +742,82 @@
               </div>
             </section>
 
+            <section id="vendor-transform-scale-x">
+              <h4>Scale X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.scaleX(@x: 0) {
+  .transform(~"scaleX(@{x})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-scaleX {
+  .scaleX(2);
+}
+</pre>
+                <pre class="css">.test-scaleX {
+  -webkit-transform: scaleX(2);
+     -moz-transform: scaleX(2);
+      -ms-transform: scaleX(2);
+       -o-transform: scaleX(2);
+          transform: scaleX(2);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-scale-y">
+              <h4>Scale Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.scaleY(@y: 0) {
+  .transform(~"scaleY(@{y})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-scaleY {
+  .scaleY(3);
+}
+</pre>
+                <pre class="css">.test-scaleY {
+  -webkit-transform: scaleY(3);
+     -moz-transform: scaleY(3);
+      -ms-transform: scaleY(3);
+       -o-transform: scaleY(3);
+          transform: scaleY(3);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-scale-z">
+              <h4>Scale Z (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.scaleZ(@z: 0) {
+  .transform3d(~"scaleZ(@{z})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-scaleZ {
+  .scaleZ(4);
+}
+</pre>
+                <pre class="css">.test-scaleZ {
+  -webkit-transform: scaleZ(4);
+     -moz-transform: scaleZ(4);
+          transform: scaleZ(4);
+}
+</pre>
+              </div>
+            </section>
+
             <section id="utilities">
                 <h3>Utilities</h3>
                 How many times have you been in the situation to add the "clearfix" class in a project? Or jumping to <a href="http://www.fontsquirrel.com/" target="_blank"><strong>Font Squirrel</strong></a> to remember how <code>font-face</code> works?
