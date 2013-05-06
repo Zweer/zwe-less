@@ -542,7 +542,7 @@
               </div>
             </section>
 
-            <section id="vendor-transform-matrix">
+            <section id="vendor-transform-translate">
               <h4>Translate (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
               <div class="syntax">
                 <pre class="less">.translate(@x: 0, @y: 0) {
@@ -568,7 +568,7 @@
               </div>
             </section>
 
-            <section id="vendor-transform-matrix3d">
+            <section id="vendor-transform-translate3d">
               <h4>Translate 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
               <div class="syntax">
                 <pre class="less">.translate3d(@x: 0, @y: 0, @z: 0) {
@@ -592,7 +592,7 @@
               </div>
             </section>
 
-            <section id="vendor-transform-matrix">
+            <section id="vendor-transform-translate-x">
               <h4>Translate X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
               <div class="syntax">
                 <pre class="less">.translateX(@x: 0) {
@@ -618,7 +618,7 @@
               </div>
             </section>
 
-            <section id="vendor-transform-matrix">
+            <section id="vendor-transform-translate-y">
               <h4>Translate Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
               <div class="syntax">
                 <pre class="less">.translateY(@y: 0) {
@@ -644,7 +644,7 @@
               </div>
             </section>
 
-            <section id="vendor-transform-matrix3d">
+            <section id="vendor-transform-translate-z">
               <h4>Translate Z (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
               <div class="syntax">
                 <pre class="less">.translateZ(@z: 0) {
@@ -663,6 +663,80 @@
   -webkit-transform: translateZ(20px);
      -moz-transform: translateZ(20px);
           transform: translateZ(20px);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-scale">
+              <h4>Scale (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.scale(@x, @y) {
+  .transform(~"scale(@{x}, @{y})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less half first">.test-scale-two-arguments {
+  .scale(2, 3);
+}
+</pre>
+                <pre class="css half second">.test-scale-two-arguments {
+  -webkit-transform: scale(2, 3);
+     -moz-transform: scale(2, 3);
+      -ms-transform: scale(2, 3);
+       -o-transform: scale(2, 3);
+          transform: scale(2, 3);
+}
+</pre>
+              </div>
+
+              If you pass only one argument to the <code>scale</code> mixin, it behaves as the second is the same:
+              <div class="syntax">
+                <pre class="less">.scale(@x: 1) {
+  .transform(~"scale(@{x})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less half first">.test-scale-one-argument {
+  .scale(2);
+}
+</pre>
+                <pre class="css half second">.test-scale-one-argument {
+  -webkit-transform: scale(2);
+     -moz-transform: scale(2);
+      -ms-transform: scale(2);
+       -o-transform: scale(2);
+          transform: scale(2);
+}
+</pre>
+              </div>
+            </section>
+
+            <section id="vendor-transform-scale3d">
+              <h4>Scale 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+              <div class="syntax">
+                <pre class="less">.scale3d(@x: 1, @y: 1, @z: 1) {
+  .transform3d(~"scale3d(@{x}, @{y}, @{z})");
+}
+</pre>
+              </div>
+
+              Example:
+              <div class="syntax">
+                <pre class="less">.test-scale3d {
+  .scale3d(2, 3, 4);
+}
+</pre>
+                <pre class="css">.test-scale3d {
+  -webkit-transform: scale3d(2, 3, 4);
+     -moz-transform: scale3d(2, 3, 4);
+          transform: scale3d(2, 3, 4);
 }
 </pre>
               </div>
