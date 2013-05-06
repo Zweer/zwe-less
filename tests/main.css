@@ -147,6 +147,56 @@ body {
           transform-style: preserve-3d;
 }
 
+.test-matrix {
+  -webkit-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+     -moz-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+      -ms-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+       -o-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+          transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+}
+
+.test-matrix3d {
+  -webkit-transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
+     -moz-transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
+          transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
+}
+
+.test-translate {
+  -webkit-transform: translate(10px, 3px);
+     -moz-transform: translate(10px, 3px);
+      -ms-transform: translate(10px, 3px);
+       -o-transform: translate(10px, 3px);
+          transform: translate(10px, 3px);
+}
+
+.test-translate3d {
+  -webkit-transform: translate3d(10px, 3px, 20px);
+     -moz-transform: translate3d(10px, 3px, 20px);
+          transform: translate3d(10px, 3px, 20px);
+}
+
+.test-translateX {
+  -webkit-transform: translateX(10px);
+     -moz-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+       -o-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.test-translateY {
+  -webkit-transform: translateY(3px);
+     -moz-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+       -o-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.test-translateZ {
+  -webkit-transform: translateZ(20px);
+     -moz-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
 @font-face {
   font-family: "Open Sans";
   font-style: italic;
