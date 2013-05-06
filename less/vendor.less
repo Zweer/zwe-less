@@ -220,3 +220,15 @@
 .scale3d(@x: 1, @y: 1, @z: 1) {
   .transform3d(~"scale3d(@{x}, @{y}, @{z})");
 }
+// Scale X
+.scaleX(@x: 1) {
+  .transform(~"scaleX(@{x})");
+}
+// Scale Y
+.scaleY(@y: 1) {
+  .transform(~"scaleY(@{y})");
+}
+// Scale Z
+.scaleZ(@z: 1) {
+  .transform3d(~"scaleZ(@{z})");
+}
