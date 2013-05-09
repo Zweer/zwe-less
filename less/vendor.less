@@ -21,6 +21,8 @@
 // 
 // - Opacity
 // 
+// - Text Overflow
+// 
 // - Transition
 // -- Transition
 // -- Transition Delay
@@ -135,6 +137,12 @@
 
   @opacity-ie: @opacity * 100;
   filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
+
+// Text Overflow
+.text-overflow(@overflow: clip) {
+  -o-text-overflow: @overflow; // Opera < 11 && Opera Mini && Opera Mobile <= 12
+     text-overflow: @overflow;
 }
 
 // Transitions
