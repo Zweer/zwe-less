@@ -241,6 +241,62 @@ body {
           transform: scaleZ(4);
 }
 
+.test-rotate {
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.test-rotate3d {
+  -webkit-transform: rotate3d(1, -1, 0, 60deg);
+     -moz-transform: rotate3d(1, -1, 0, 60deg);
+          transform: rotate3d(1, -1, 0, 60deg);
+}
+
+.test-rotateX {
+  -webkit-transform: rotateX(30deg);
+     -moz-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+}
+
+.test-rotateY {
+  -webkit-transform: rotateY(135deg);
+     -moz-transform: rotateY(135deg);
+          transform: rotateY(135deg);
+}
+
+.test-rotateZ {
+  -webkit-transform: rotateZ(15deg);
+     -moz-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+}
+
+.test-skew {
+  -webkit-transform: skew(45deg, 45deg);
+     -moz-transform: skew(45deg, 45deg);
+      -ms-transform: skew(45deg, 45deg);
+       -o-transform: skew(45deg, 45deg);
+          transform: skew(45deg, 45deg);
+}
+
+.test-skewX {
+  -webkit-transform: skewX(60deg);
+     -moz-transform: skewX(60deg);
+      -ms-transform: skewX(60deg);
+       -o-transform: skewX(60deg);
+          transform: skewX(60deg);
+}
+
+.test-skewY {
+  -webkit-transform: skewY(30deg);
+     -moz-transform: skewY(30deg);
+      -ms-transform: skewY(30deg);
+       -o-transform: skewY(30deg);
+          transform: skewY(30deg);
+}
+
 @font-face {
   font-family: "Open Sans";
   font-style: italic;

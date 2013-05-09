@@ -232,3 +232,35 @@
 .scaleZ(@z: 1) {
   .transform3d(~"scaleZ(@{z})");
 }
+// Rotate
+.rotate(@angle: 0) {
+  .transform(~"rotate(@{angle})");
+}
+// Rotate 3D
+.rotate3d(@x: 0, @y: 0, @z: 0, @angle: 0) {
+  .transform3d(~"rotate3d(@{x}, @{y}, @{z}, @{angle})");
+}
+// Rotate X
+.rotateX(@angle: 0) {
+  .transform3d(~"rotateX(@{angle})");
+}
+// Rotate Y
+.rotateY(@angle: 0) {
+  .transform3d(~"rotateY(@{angle})");
+}
+// Rotate Z
+.rotateZ(@angle: 0) {
+  .transform3d(~"rotateZ(@{angle})");
+}
+// Skew
+.skew(@x-angle: 0, @y-angle) {
+  .transform(~"skew(@{x-angle}, @{y-angle})");
+}
+// Skew X
+.skewX(@angle: 0) {
+  .transform(~"skewX(@{angle})");
+}
+// Skew Y
+.skewY(@angle: 0) {
+  .transform(~"skewY(@{angle})");
+}
