@@ -3,124 +3,129 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>ZweLess - LESS at your service</title>
-        <meta name="description" content="ZweLess is a collection of LESS mixins and variables you won't leave without">
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ZweLess - LESS at your service</title>
+    <meta name="description" content="ZweLess is a collection of LESS mixins and variables you won't leave without">
+    <meta name="viewport" content="width=device-width">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-        <header>
-        	<hgroup>
-	        	<h1><strong>ZweLess</strong>. LESS at your service</h1>
-	        	<h2>A collection of LESS mixins and variables you won't leave without</h2>
-	        	<a id="download" href="https://github.com/Zweer/zwe-less/archive/master.zip">Download latest version</a>
-                <a href="https://github.com/Zweer/zwe-less"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-	        </hgroup>
-        </header>
+    <header>
+    	<hgroup>
+      	<h1><strong>ZweLess</strong>. LESS at your service</h1>
+      	<h2>A collection of LESS mixins and variables you won't leave without</h2>
+      	<a id="download" href="https://github.com/Zweer/zwe-less/archive/master.zip">Download latest version</a>
+          <a href="https://github.com/Zweer/zwe-less"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+      </hgroup>
+    </header>
 
-        <div class="container">
-            <nav role="main">
-            	<ul>
-            		<li><a href="#introduction">Introduction</a></li>
+    <div class="container">
+      <nav role="main">
+      	<ul>
+      		<li><a href="#introduction">Introduction</a></li>
 
-            		<li><a href="#installation">Installation</a></li>
+      		<li><a href="#installation">Installation</a></li>
 
-                    <li>
-                        <a href="#variables">Variables</a>
-                        <ul>
-                            <li><a href="#variables-colors">Colors</a>
-                        </ul>
-                    </li>
+          <li>
+            <a href="#variables">Variables</a>
+            <ul>
+              <li><a href="#variables-colors">Colors</a>
+            </ul>
+          </li>
 
-                    <li>
-                        <a href="#vendor">Vendor Mixins</a>
-                        <ul>
-                            <li><a href="#vendor-backface">Backface Visibility</a></li>
-                            <li><a href="#vendor-border-image">Border Image</a></li>
-                            <li><a href="#vendor-border-radius">Border Radius</a></li>
-                            <li><a href="#vendor-box-shadow">Box Shadow</a></li>
-                            <li><a href="#vendor-box-sizing">Box Sizing</a></li>
-                            <li><a href="#vendor-opacity">Opacity</a></li>
-                            <li><a href="#vendor-transform">Transform</a></li>
-                            <li><a href="#vendor-transform-origin">Transform Origin</a></li>
-                            <li><a href="#vendor-transform-style">Transform Style</a></li>
-                            <li><a href="#vendor-transform-matrix">Transform Matrix</a></li>
-                            <li><a href="#vendor-transform-matrix3d">Transform Matrix 3D</a></li>
-                            <li><a href="#vendor-transform-translate">Transform Translate</a></li>
-                            <li><a href="#vendor-transform-translate3d">Transform Translate 3D</a></li>
-                            <li><a href="#vendor-transform-translate-x">Transform Translate X</a></li>
-                            <li><a href="#vendor-transform-translate-y">Transform Translate Y</a></li>
-                            <li><a href="#vendor-transform-translate-z">Transform Translate Z</a></li>
-                        </ul>
-                    </li>
+          <li>
+            <a href="#vendor">Vendor Mixins</a>
+            <ul>
+              <li><a href="#vendor-backface">Backface Visibility</a></li>
+              <li><a href="#vendor-border-image">Border Image</a></li>
+              <li><a href="#vendor-border-radius">Border Radius</a></li>
+              <li><a href="#vendor-box-shadow">Box Shadow</a></li>
+              <li><a href="#vendor-box-sizing">Box Sizing</a></li>
+              <li><a href="#vendor-opacity">Opacity</a></li>
+              <li><a href="#vendor-transform">Transform</a></li>
+              <li><a href="#vendor-transform-origin">Transform Origin</a></li>
+              <li><a href="#vendor-transform-style">Transform Style</a></li>
+              <li><a href="#vendor-transform-matrix">Transform Matrix</a></li>
+              <li><a href="#vendor-transform-matrix3d">Transform Matrix 3D</a></li>
+              <li><a href="#vendor-transform-translate">Transform Translate</a></li>
+              <li><a href="#vendor-transform-translate3d">Transform Translate 3D</a></li>
+              <li><a href="#vendor-transform-translate-x">Transform Translate X</a></li>
+              <li><a href="#vendor-transform-translate-y">Transform Translate Y</a></li>
+              <li><a href="#vendor-transform-translate-z">Transform Translate Z</a></li>
+              <li><a href="#vendor-transform-scale">Transform Scale</a></li>
+              <li><a href="#vendor-transform-scale3d">Transform Scale 3D</a></li>
+              <li><a href="#vendor-transform-scale-x">Transform Scale X</a></li>
+              <li><a href="#vendor-transform-scale-y">Transform Scale Y</a></li>
+              <li><a href="#vendor-transform-scale-z">Transform Scale Z</a></li>
+            </ul>
+          </li>
 
-                    <li>
-                        <a href="#utilities">Utilities</a>
-                        <ul>
-                            <li><a href="#utilities-center-block">Center Block</a></li>
-                            <li><a href="#utilities-clearfix">Clearfix</a></li>
-                            <li><a href="#utilities-font-face">Font Face</a></li>
-                            <li><a href="#utilities-size">Size</a></li>
-                            <li><a href="#utilities-text-truncate">Text Truncate</a></li>
-                        </ul>
-                    </li>
-            	</ul>
-            </nav>
+          <li>
+            <a href="#utilities">Utilities</a>
+            <ul>
+              <li><a href="#utilities-center-block">Center Block</a></li>
+              <li><a href="#utilities-clearfix">Clearfix</a></li>
+              <li><a href="#utilities-font-face">Font Face</a></li>
+              <li><a href="#utilities-size">Size</a></li>
+              <li><a href="#utilities-text-truncate">Text Truncate</a></li>
+            </ul>
+          </li>
+      	</ul>
+      </nav>
 
-        	<section id="introduction">
-                <h3>Introduction</h3>
-        		<strong>ZweLess</strong> is a <a href="http://lesscss.org"><strong>LESS</strong></a> library that includes a lot of mixins and variables to help you styling a website.
-        		Nowadays there are a lot of different browsers, each with its set of prefixed properties and incompatibilities. <strong>ZweLess</strong> tries (and we can say succeded quite well) to think about that for you, saving you time to enjoy the styling process and enhance your creativity.
-                <br><br>
-                A keen eye could easily see that a lot of the code of <strong>ZweLess</strong> is taken from <a href="http://getpreboot.com/" target="_blank"><strong>Preboot</strong></a> and from <a href="http://lesshat.com/" target="_blank"><strong>Less Hat</strong></a>.
-                Of course all the credit for that goes to their creators, I've just put it in a single library, trying to make it better and more flexible.
-        	</section>
+    	<section id="introduction">
+        <h3>Introduction</h3>
+    		<strong>ZweLess</strong> is a <a href="http://lesscss.org"><strong>LESS</strong></a> library that includes a lot of mixins and variables to help you styling a website.
+    		Nowadays there are a lot of different browsers, each with its set of prefixed properties and incompatibilities. <strong>ZweLess</strong> tries (and we can say succeded quite well) to think about that for you, saving you time to enjoy the styling process and enhance your creativity.
+        <br><br>
+        A keen eye could easily see that a lot of the code of <strong>ZweLess</strong> is taken from <a href="http://getpreboot.com/" target="_blank"><strong>Preboot</strong></a> and from <a href="http://lesshat.com/" target="_blank"><strong>Less Hat</strong></a>.
+        Of course all the credit for that goes to their creators, I've just put it in a single library, trying to make it better and more flexible.
+    	</section>
 
-        	<section id="installation">
-                <h3>Installation</h3>
-        		Start using <strong>ZweLess</strong> is really easy: just <a href="#">download</a> the project, copy the whole <code>less</code> directory into your website folder and include the <code>zwe.less</code> file: <code>@import "zwe";</code>.
-        		<br>
-        		Now you can start using all the mixins and variables provided by <strong>ZweLess</strong>
-        	</section>
+    	<section id="installation">
+        <h3>Installation</h3>
+    		Start using <strong>ZweLess</strong> is really easy: just <a href="#">download</a> the project, copy the whole <code>less</code> directory into your website folder and include the <code>zwe.less</code> file: <code>@import "zwe";</code>.
+    		<br>
+    		Now you can start using all the mixins and variables provided by <strong>ZweLess</strong>
+    	</section>
 
-            <section id="variables">
-                <h3>Variables</h3>
-                CSS doesn't have variables, but LESS does, and we try to take advantages of this feature to provide everything a designer wants.
-            </section>
+      <section id="variables">
+        <h3>Variables</h3>
+        CSS doesn't have variables, but LESS does, and we try to take advantages of this feature to provide everything a designer wants.
+      </section>
 
-            <section id="variables-colors">
-                <h4>Colors</h4>
-                Variables for colors could be too much, so we provide only grayscale: from <code>#000</code> to <code>#fff</code> in steps of 10%:
+      <section id="variables-colors">
+        <h4>Colors</h4>
+        Variables for colors could be too much, so we provide only grayscale: from <code>#000</code> to <code>#fff</code> in steps of 10%:
 
-                <ul class="grayscale">
-                    <li class="black-10"></li>
-                    <li class="black-20"></li>
-                    <li class="black-30"></li>
-                    <li class="black-40"></li>
-                    <li class="black-50"></li>
-                    <li class="black-60"></li>
-                    <li class="black-70"></li>
-                    <li class="black-80"></li>
-                    <li class="black-90"></li>
-                </ul>
+        <ul class="grayscale">
+          <li class="black-10"></li>
+          <li class="black-20"></li>
+          <li class="black-30"></li>
+          <li class="black-40"></li>
+          <li class="black-50"></li>
+          <li class="black-60"></li>
+          <li class="black-70"></li>
+          <li class="black-80"></li>
+          <li class="black-90"></li>
+        </ul>
 
-                <div class="syntax">
-<pre class="less">//Grayscale
+        <div class="syntax">
+          <pre class="less">//Grayscale
 @black-10: darken(#fff, 10%); // #e6e6e6
 @black-20: darken(#fff, 20%); // #ccc
 @black-30: darken(#fff, 30%); // #b3b3b3
@@ -131,96 +136,95 @@
 @black-80: darken(#fff, 80%); // #333
 @black-90: darken(#fff, 90%); // #191919
 </pre>
-                </div>
+        </div>
 
-                For example one of the above squares is colorized in this way:
-
-                <div class="syntax">
-                    <pre class="less half first">.black-10 {
+        For example one of the above squares is colorized in this way:
+        <div class="syntax">
+          <pre class="less half first">.black-10 {
   background: @black-10;
 }</pre>
-                    <pre class="css half second">.black-10 {
+          <pre class="css half second">.black-10 {
   background: #e6e6e6;
 }</pre>
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <section id="vendor">
-                <h3>Vendor Mixins</h3>
-                With all these browsers out there, writing prefixed properties can be really painfull. <strong>ZweLess</strong> allows you to write single-line mixins instead of multi-line properties, leaving you more time to design!
-                <br><br>
-                By default all these mixins use the default w3c parameter.
-            </section>
+      <section id="vendor">
+        <h3>Vendor Mixins</h3>
+        With all these browsers out there, writing prefixed properties can be really painfull. <strong>ZweLess</strong> allows you to write single-line mixins instead of multi-line properties, leaving you more time to design!
+        <br><br>
+        By default all these mixins use the default w3c parameter.
+      </section>
 
-            <section id="vendor-backface">
-                <h4>Backface Visibility (<a href="http://www.w3schools.com/cssref/css3_pr_backface-visibility.asp" target="_blank">w3c</a>)</h4>
-                Possible values are: <code>visible</code> <em>(default)</em> and <code>hidden</code>
-                <div class="syntax">
-                    <pre class="less">.backface-visibility(@visibility: visible) {
+      <section id="vendor-backface">
+        <h4>Backface Visibility (<a href="http://www.w3schools.com/cssref/css3_pr_backface-visibility.asp" target="_blank">w3c</a>)</h4>
+        Possible values are: <code>visible</code> <em>(default)</em> and <code>hidden</code>
+        <div class="syntax">
+          <pre class="less">.backface-visibility(@visibility: visible) {
   -webkit-backface-visibility: @visibility;
      -moz-backface-visibility: @visibility;
       -ms-backface-visibility: @visibility;
           backface-visibility: @visibility;
 }
 </pre>
-                </div>
+        </div>
 
-                Example:
-                <div class="syntax">
-                    <pre class="less">.test-backface-visibility {
+        Example:
+        <div class="syntax">
+          <pre class="less">.test-backface-visibility {
   .backface-visibility(hidden);
 }
 </pre>
-                    <pre class="css">.test-backface-visibility {
+          <pre class="css">.test-backface-visibility {
   -webkit-backface-visibility: hidden;
      -moz-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 </pre>
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <section id="vendor-border-image">
-                <h4>Border Image (<a href="http://www.w3schools.com/cssref/css3_pr_border-image.asp" target="_blank">w3c</a>)</h4>
-                <div class="syntax">
-                    <pre>.border-image(@image: none) {
+      <section id="vendor-border-image">
+        <h4>Border Image (<a href="http://www.w3schools.com/cssref/css3_pr_border-image.asp" target="_blank">w3c</a>)</h4>
+        <div class="syntax">
+          <pre>.border-image(@image: none) {
   -webkit-border-image: @image;
        -o-border-image: @image;
           border-image: @image;
 }
 </pre>
-                </div>
+        </div>
 
-                Example:
-                <div class="syntax">
-                    <pre class="less">.test-border-image {
+        Example:
+        <div class="syntax">
+          <pre class="less">.test-border-image {
   .border-image(url(border.png) 30 30 round);
 }
 </pre>
-                    <pre class="css">.test-border-image {
+          <pre class="css">.test-border-image {
   -webkit-border-image: url(border.png) 30 30 round;
        -o-border-image: url(border.png) 30 30 round;
           border-image: url(border.png) 30 30 round;
 }
 </pre>
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <section id="vendor-border-radius">
-                <h4>Border Radius (<a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" target="_blank">w3c</a>)</h4>
-                Border Radius is supported by all major browsers. Sometimes, however, it doesn't display correctly the background. A <code>background-clip: padding-box</code> is applied to fix it.
-                <div class="syntax">
-                    <pre class="less">.border-radius(@radius: 0) {
+      <section id="vendor-border-radius">
+        <h4>Border Radius (<a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" target="_blank">w3c</a>)</h4>
+        Border Radius is supported by all major browsers. Sometimes, however, it doesn't display correctly the background. A <code>background-clip: padding-box</code> is applied to fix it.
+        <div class="syntax">
+          <pre class="less">.border-radius(@radius: 0) {
     border-radius: @radius;
   background-clip: padding-box;
 }
 </pre>
-                </div>
+        </div>
 
-                The same behaviour is applied to the single corners:
-                <div class="syntax">
-                    <pre class="less">.border-top-left-radius(@radius: 0) {
+        The same behaviour is applied to the single corners:
+        <div class="syntax">
+          <pre class="less">.border-top-left-radius(@radius: 0) {
   border-top-left-radius: @radius;
          background-clip: padding-box;
 }
@@ -240,179 +244,179 @@
             background-clip: padding-box;
 }
 </pre>
-                </div>
+        </div>
 
-                Example: 
-                <div class="syntax">
-                    <pre class="less half first">.test-border-radius {
+        Example: 
+        <div class="syntax">
+          <pre class="less half first">.test-border-radius {
   .border-radius(25px);
 }
 </pre>
-                    <pre class="css half second">.test-border-radius {
-  border-radius: 25px;
+          <pre class="css half second">.test-border-radius {
+    border-radius: 25px;
   background-clip: padding-box;
 }
 </pre>
-                </div>
+        </div>
 
-                Moreover there are mixins to aggregate more corners:
-                <div class="syntax">
-                    <pre class="less">.border-top-radius(@radius: 0) {
-   .border-top-left-radius(@radius);
+        Moreover there are mixins to aggregate more corners:
+        <div class="syntax">
+          <pre class="less">.border-top-radius(@radius: 0) {
+  .border-top-left-radius(@radius);
   .border-top-right-radius(@radius);
 }
 
 .border-right-radius(@radius: 0) {
-     .border-top-right-radius(@radius);
+  .border-top-right-radius(@radius);
   .border-bottom-right-radius(@radius);
 }
 
 .border-bottom-radius(@radius: 0) {
-   .border-bottom-left-radius(@radius);
+  .border-bottom-left-radius(@radius);
   .border-bottom-right-radius(@radius);
 }
 
 .border-left-radius(@radius: 0) {
-     .border-top-left-radius(@radius);
+  .border-top-left-radius(@radius);
   .border-bottom-left-radius(@radius);
 }
 </pre>
-                </div>
+        </div>
 
-                Example:
-                <div class="syntax">
-                    <pre class="less">.test-border-top-radius {
-    .border-top-radius(10px);
+        Example:
+        <div class="syntax">
+          <pre class="less">.test-border-top-radius {
+  .border-top-radius(10px);
 }
 </pre>
-                    <pre class="css">.test-border-top-radius {
+          <pre class="css">.test-border-top-radius {
   border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  background-clip: padding-box;
+   border-top-left-radius: 10px;
+          background-clip: padding-box;
 }
 </pre>
-                </div>
+        </div>
 
-                As you can see, LESS automatically removes the duplicated <code>background-clip</code>
-            </section>
+        As you can see, LESS automatically removes the duplicated <code>background-clip</code>
+      </section>
 
-            <section id="vendor-box-shadow">
-                <h4>Box Shadow (<a href="http://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">w3c</a>)</h4>
-                <div class="syntax">
-                    <pre class="less">.box-shadow(@shadow: none) {
+      <section id="vendor-box-shadow">
+        <h4>Box Shadow (<a href="http://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">w3c</a>)</h4>
+        <div class="syntax">
+          <pre class="less">.box-shadow(@shadow: none) {
   -webkit-box-shadow: @shadow; // iOS < 5 & Android < 4 & Blackberry 7
           box-shadow: @shadow;
 }
 </pre>
-                </div>
+        </div>
 
-                Example:
-                <div class="syntax">
-                    <pre class="less">.test-box-shadow {
+        Example:
+        <div class="syntax">
+          <pre class="less">.test-box-shadow {
   .box-shadow(10px 10px 5px #888);
 }
 </pre>
-                    <pre class="css">.test-box-shadow {
+          <pre class="css">.test-box-shadow {
   -webkit-box-shadow: 10px 10px 5px #888888;
           box-shadow: 10px 10px 5px #888888;
 }
 </pre>
-                </div>
+        </div>
 
-                You can also put different shadows in the single mixin by simply escaping it:
-                <div class="syntax">
-                    <pre class="less">.test-box-shadow {
+        You can also put different shadows in the single mixin by simply escaping it:
+        <div class="syntax">
+          <pre class="less">.test-box-shadow {
   .box-shadow(~"0 1px 10px #000, inset 0 -2px 5px red");
 }
 </pre>
-                    <pre class="css">.test-box-shadow {
+          <pre class="css">.test-box-shadow {
   -webkit-box-shadow: 0 1px 10px #000000, inset 0 -2px 5px #ff0000;
           box-shadow: 0 1px 10px #000000, inset 0 -2px 5px #ff0000;
 }
 </pre>
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <section id="vendor-box-sizing">
-                <h4>Box Sizing (<a href="http://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank">w3c</a>)</h4>
-                <div class="syntax">
-                    <pre class="less">.box-sizing(@box-model: content-box) {
+      <section id="vendor-box-sizing">
+        <h4>Box Sizing (<a href="http://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank">w3c</a>)</h4>
+        <div class="syntax">
+          <pre class="less">.box-sizing(@box-model: content-box) {
   -webkit-box-sizing: @box-model; // iOS < 5 & Android < 4 & Blackberry 7
      -moz-box-sizing: @box-model;
           box-sizing: @box-model;
 }
 </pre>
-                </div>
+        </div>
 
-                Example:
-                <div class="syntax">
-                    <pre class="less half first">.test-box-sizing {
+        Example:
+        <div class="syntax">
+          <pre class="less half first">.test-box-sizing {
   .box-sizing(border-box);
 }
 </pre>
-                    <pre class="css half second">.test-box-sizing {
+          <pre class="css half second">.test-box-sizing {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 </pre>
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <section id="vendor-opacity">
-                <h4>Opacity (<a href="http://www.w3schools.com/cssref/css3_pr_opacity.asp" target="_blank">w3c</a>)</h4>
-                The <code>opacity</code> property doesn't have vendor prefixes, but it isn't compatible with IE8 and earlier versions. To extend this compatibility the <code>alpha</code> filter is used.
-                <div class="syntax">
-                    <pre class="less">.opacity(@opacity: 1) {
+      <section id="vendor-opacity">
+        <h4>Opacity (<a href="http://www.w3schools.com/cssref/css3_pr_opacity.asp" target="_blank">w3c</a>)</h4>
+        The <code>opacity</code> property doesn't have vendor prefixes, but it isn't compatible with IE8 and earlier versions. To extend this compatibility the <code>alpha</code> filter is used.
+        <div class="syntax">
+          <pre class="less">.opacity(@opacity: 1) {
   opacity: @opacity;
 
   @opacity-ie: @opacity * 100;
-  filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+   filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
 }
 </pre>
-                </div>
+        </div>
 
-                Example:
-                <div class="syntax">
-                    <pre class="less half first">.test-opacity {
+        Example:
+        <div class="syntax">
+            <pre class="less half first">.test-opacity {
   .opacity(.5);
 }
 </pre>
-                    <pre class="css half second">.test-opacity {
+            <pre class="css half second">.test-opacity {
   opacity: 0.5;
-  filter: alpha(opacity=50);
+   filter: alpha(opacity=50);
 }
 </pre>
-                </div>
-            </section>
+        </div>
+      </section>
 
-            <section id="vendor-transform">
-              <h4>Transform (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              Since IE and Opera do not support 3D transformations, we have divided 3D from 2D prefixes:
-              <div class="syntax">
-                <pre class="less">.transform3d(@transform: none) {
+      <section id="vendor-transform">
+        <h4>Transform (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+        Since IE and Opera do not support 3D transformations, we have divided 3D from 2D prefixes:
+        <div class="syntax">
+          <pre class="less">.transform3d(@transform: none) {
   -webkit-transform: @transform; // Chrome && Safari && iOS && Android
      -moz-transform: @transform; // Firefox < 16
           transform: @transform;
 }
 </pre>
-              </div>
-              <div class="syntax">
-                <pre class="less">.transform(@transform: none) {
+        </div>
+        <div class="syntax">
+          <pre class="less">.transform(@transform: none) {
   -ms-transform: @transform; // IE 9
    -o-transform: @transform; // Opera < 12.1
-     .transform3d(@transform);
+  .transform3d(@transform);
 }
 </pre>
-              </div>
+        </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less half first">.test-transform {
+        Example:
+        <div class="syntax">
+          <pre class="less half first">.test-transform {
   .transform(rotate(7deg));
 }
 </pre>
-                <pre class="css half second">.test-transform {
+          <pre class="css half second">.test-transform {
   -webkit-transform: rotate(7deg);
      -moz-transform: rotate(7deg);
       -ms-transform: rotate(7deg);
@@ -420,25 +424,25 @@
           transform: rotate(7deg);
 }
 </pre>
-              </div>
-              <div class="syntax">
-                <pre class="less half first">.test-transform3d {
+        </div>
+        <div class="syntax">
+          <pre class="less half first">.test-transform3d {
   .transform3d(rotate(7deg));
 }
 </pre>
-                <pre class="css half second">.test-transform3d {
+          <pre class="css half second">.test-transform3d {
   -webkit-transform: rotate(7deg);
      -moz-transform: rotate(7deg);
           transform: rotate(7deg);
 }
 </pre>
-              </div>
-            </section>
+        </div>
+      </section>
 
-            <section id="vendor-transform-origin">
-              <h4>Transform Origin (<a href="http://www.w3schools.com/cssref/css3_pr_transform-origin.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.transform-origin(@origin: 50% 50% 0) {
+        <section id="vendor-transform-origin">
+          <h4>Transform Origin (<a href="http://www.w3schools.com/cssref/css3_pr_transform-origin.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.transform-origin(@origin: 50% 50% 0) {
   -webkit-transform-origin: @origin; // Chrome && Safari && iOS && Android
      -moz-transform-origin: @origin; // Firefox < 16
       -ms-transform-origin: @origin; // IE 9
@@ -446,15 +450,15 @@
           transform-origin: @origin;
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-transform-origin {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-transform-origin {
   .transform-origin(20% 40%);
 }
 </pre>
-                <pre class="css">.test-transform-origin {
+            <pre class="css">.test-transform-origin {
   -webkit-transform-origin: 20% 40%;
      -moz-transform-origin: 20% 40%;
       -ms-transform-origin: 20% 40%;
@@ -462,52 +466,52 @@
           transform-origin: 20% 40%;
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-style">
-              <h4>Transform Style (<a href="http://www.w3schools.com/cssref/css3_pr_transform-style.asp" target="_blank">w3c</a>)</h4>
-              Because Opera and Internet Explorer don't support 3D transformations, this mixin doesn't include their prefixes
-              <div class="syntax">
-                <pre class="less">.transform-style(@style: flat) {
+        <section id="vendor-transform-style">
+          <h4>Transform Style (<a href="http://www.w3schools.com/cssref/css3_pr_transform-style.asp" target="_blank">w3c</a>)</h4>
+          Because Opera and Internet Explorer don't support 3D transformations, this mixin doesn't include their prefixes
+          <div class="syntax">
+            <pre class="less">.transform-style(@style: flat) {
   -webkit-transform-style: @style; // Chrome && Safari && iOS && Android
      -moz-transform-style: @style; // Firefox < 16
           transform-style: @style;
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-transform-style {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-transform-style {
   .transform-style(preserve-3d);
 }
 </pre>
-                <pre class="css">.test-transform-style {
+            <pre class="css">.test-transform-style {
   -webkit-transform-style: preserve-3d;
      -moz-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-matrix">
-              <h4>Matrix (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.matrix(@n0: 0, @n1: 0, @n2: 0, @n3: 0, @n4: 0, @n5: 0) {
+        <section id="vendor-transform-matrix">
+          <h4>Matrix (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.matrix(@n0: 0, @n1: 0, @n2: 0, @n3: 0, @n4: 0, @n5: 0) {
   .transform(~"matrix(@{n0}, @{n1}, @{n2}, @{n3}, @{n4}, @{n5})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-matrix {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-matrix {
   .matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
 }
 </pre>
-                <pre class="css">.test-matrix {
+            <pre class="css">.test-matrix {
   -webkit-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
      -moz-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
       -ms-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
@@ -515,49 +519,49 @@
           transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-matrix3d">
-              <h4>Matrix 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.matrix3d(@n0: 0, @n1: 0, @n2: 0, @n3: 0, @n4: 0, @n5: 0, @n6: 0, @n7: 0, @n8: 0, @n9: 0, @na: 0, @nb: 0, @nc: 0, @nd: 0, @ne: 0, @nf: 0) {
+        <section id="vendor-transform-matrix3d">
+          <h4>Matrix 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.matrix3d(@n0: 0, @n1: 0, @n2: 0, @n3: 0, @n4: 0, @n5: 0, @n6: 0, @n7: 0, @n8: 0, @n9: 0, @na: 0, @nb: 0, @nc: 0, @nd: 0, @ne: 0, @nf: 0) {
   .transform3d(~"matrix3d(@{n0}, @{n1}, @{n2}, @{n3}, @{n4}, @{n5}, @{n6}, @{n7}, @{n8}, @{n9}, @{na}, @{nb}, @{nc}, @{nd}, @{ne}, @{nf})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-matrix3d {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-matrix3d {
   .matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
 }
 </pre>
-                <pre class="css">.test-matrix3d {
+            <pre class="css">.test-matrix3d {
   -webkit-transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
      -moz-transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
           transform: matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-translate">
-              <h4>Translate (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.translate(@x: 0, @y: 0) {
+        <section id="vendor-transform-translate">
+          <h4>Translate (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.translate(@x: 0, @y: 0) {
   .transform(~"translate(@{x}, @{y})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-translate {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-translate {
   .translate(10px, 3px);
 }
 </pre>
-                <pre class="css">.test-translate {
+            <pre class="css">.test-translate {
   -webkit-transform: translate(10px, 3px);
      -moz-transform: translate(10px, 3px);
       -ms-transform: translate(10px, 3px);
@@ -565,49 +569,49 @@
           transform: translate(10px, 3px);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-translate3d">
-              <h4>Translate 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.translate3d(@x: 0, @y: 0, @z: 0) {
+        <section id="vendor-transform-translate3d">
+          <h4>Translate 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.translate3d(@x: 0, @y: 0, @z: 0) {
   .transform3d(~"translate3d(@{x}, @{y}, @{z})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-translate3d {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-translate3d {
   .translate3d(10px, 3px, 20px);
 }
 </pre>
-                <pre class="css">.test-translate3d {
+            <pre class="css">.test-translate3d {
   -webkit-transform: translate3d(10px, 3px, 20px);
      -moz-transform: translate3d(10px, 3px, 20px);
           transform: translate3d(10px, 3px, 20px);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-translate-x">
-              <h4>Translate X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.translateX(@x: 0) {
+        <section id="vendor-transform-translate-x">
+          <h4>Translate X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.translateX(@x: 0) {
   .transform(~"translateX(@{x})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-translateX {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-translateX {
   .translateX(10px);
 }
 </pre>
-                <pre class="css">.test-translateX {
+            <pre class="css">.test-translateX {
   -webkit-transform: translateX(10px);
      -moz-transform: translateX(10px);
       -ms-transform: translateX(10px);
@@ -615,25 +619,25 @@
           transform: translateX(10px);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-translate-y">
-              <h4>Translate Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.translateY(@y: 0) {
+        <section id="vendor-transform-translate-y">
+          <h4>Translate Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.translateY(@y: 0) {
   .transform(~"translateY(@{y})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-translateY {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-translateY {
   .translateY(3px);
 }
 </pre>
-                <pre class="css">.test-translateY {
+            <pre class="css">.test-translateY {
   -webkit-transform: translateY(3px);
      -moz-transform: translateY(3px);
       -ms-transform: translateY(3px);
@@ -641,49 +645,49 @@
           transform: translateY(3px);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-translate-z">
-              <h4>Translate Z (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.translateZ(@z: 0) {
+        <section id="vendor-transform-translate-z">
+          <h4>Translate Z (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.translateZ(@z: 0) {
   .transform3d(~"translateZ(@{z})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-translateZ {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-translateZ {
   .translateZ(20px);
 }
 </pre>
-                <pre class="css">.test-translateZ {
+            <pre class="css">.test-translateZ {
   -webkit-transform: translateZ(20px);
      -moz-transform: translateZ(20px);
           transform: translateZ(20px);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-scale">
-              <h4>Scale (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.scale(@x, @y) {
+        <section id="vendor-transform-scale">
+          <h4>Scale (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.scale(@x, @y) {
   .transform(~"scale(@{x}, @{y})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less half first">.test-scale-two-arguments {
+          Example:
+          <div class="syntax">
+            <pre class="less half first">.test-scale-two-arguments {
   .scale(2, 3);
 }
 </pre>
-                <pre class="css half second">.test-scale-two-arguments {
+            <pre class="css half second">.test-scale-two-arguments {
   -webkit-transform: scale(2, 3);
      -moz-transform: scale(2, 3);
       -ms-transform: scale(2, 3);
@@ -691,23 +695,23 @@
           transform: scale(2, 3);
 }
 </pre>
-              </div>
+          </div>
 
-              If you pass only one argument to the <code>scale</code> mixin, it behaves as the second is the same:
-              <div class="syntax">
-                <pre class="less">.scale(@x: 1) {
+          If you pass only one argument to the <code>scale</code> mixin, it behaves as the second is the same:
+          <div class="syntax">
+            <pre class="less">.scale(@x: 1) {
   .transform(~"scale(@{x})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less half first">.test-scale-one-argument {
+          Example:
+          <div class="syntax">
+            <pre class="less half first">.test-scale-one-argument {
   .scale(2);
 }
 </pre>
-                <pre class="css half second">.test-scale-one-argument {
+            <pre class="css half second">.test-scale-one-argument {
   -webkit-transform: scale(2);
      -moz-transform: scale(2);
       -ms-transform: scale(2);
@@ -715,49 +719,49 @@
           transform: scale(2);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-scale3d">
-              <h4>Scale 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.scale3d(@x: 1, @y: 1, @z: 1) {
+        <section id="vendor-transform-scale3d">
+          <h4>Scale 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.scale3d(@x: 1, @y: 1, @z: 1) {
   .transform3d(~"scale3d(@{x}, @{y}, @{z})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-scale3d {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-scale3d {
   .scale3d(2, 3, 4);
 }
 </pre>
-                <pre class="css">.test-scale3d {
+            <pre class="css">.test-scale3d {
   -webkit-transform: scale3d(2, 3, 4);
      -moz-transform: scale3d(2, 3, 4);
           transform: scale3d(2, 3, 4);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-scale-x">
-              <h4>Scale X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.scaleX(@x: 0) {
+        <section id="vendor-transform-scale-x">
+          <h4>Scale X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.scaleX(@x: 0) {
   .transform(~"scaleX(@{x})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-scaleX {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-scaleX {
   .scaleX(2);
 }
 </pre>
-                <pre class="css">.test-scaleX {
+            <pre class="css">.test-scaleX {
   -webkit-transform: scaleX(2);
      -moz-transform: scaleX(2);
       -ms-transform: scaleX(2);
@@ -765,25 +769,25 @@
           transform: scaleX(2);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-scale-y">
-              <h4>Scale Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.scaleY(@y: 0) {
+        <section id="vendor-transform-scale-y">
+          <h4>Scale Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.scaleY(@y: 0) {
   .transform(~"scaleY(@{y})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-scaleY {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-scaleY {
   .scaleY(3);
 }
 </pre>
-                <pre class="css">.test-scaleY {
+            <pre class="css">.test-scaleY {
   -webkit-transform: scaleY(3);
      -moz-transform: scaleY(3);
       -ms-transform: scaleY(3);
@@ -791,61 +795,261 @@
           transform: scaleY(3);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="vendor-transform-scale-z">
-              <h4>Scale Z (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
-              <div class="syntax">
-                <pre class="less">.scaleZ(@z: 0) {
+        <section id="vendor-transform-scale-z">
+          <h4>Scale Z (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.scaleZ(@z: 0) {
   .transform3d(~"scaleZ(@{z})");
 }
 </pre>
-              </div>
+          </div>
 
-              Example:
-              <div class="syntax">
-                <pre class="less">.test-scaleZ {
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-scaleZ {
   .scaleZ(4);
 }
 </pre>
-                <pre class="css">.test-scaleZ {
+            <pre class="css">.test-scaleZ {
   -webkit-transform: scaleZ(4);
      -moz-transform: scaleZ(4);
           transform: scaleZ(4);
 }
 </pre>
-              </div>
-            </section>
+          </div>
+        </section>
 
-            <section id="utilities">
-                <h3>Utilities</h3>
-                How many times have you been in the situation to add the "clearfix" class in a project? Or jumping to <a href="http://www.fontsquirrel.com/" target="_blank"><strong>Font Squirrel</strong></a> to remember how <code>font-face</code> works?
-                <br><br>
-                These mixins try to provide you all these functions you are going to use at least once per project.
-            </section>
+        <section id="vendor-transform-rotate">
+          <h4>Rotate (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.rotate(@angle: 0) {
+  .transform(~"rotate(@{angle})");
+}
+</pre>
+          </div>
 
-            <section id="utilities-center-block">
-                <h4>Center Block</h4>
-                Centers something in the page/container. It must be displayed as a <code>block</code>, so the <code>display: block</code> property is automatically added.
-                <div class="syntax">
-                    <pre class="less">.center-block {
-       display: block;
+          Example:
+          <div class="syntax">
+            <pre class="less half first">.test-rotate {
+  .rotate(45deg);
+}
+</pre>
+            <pre class="css half second">.test-rotate {
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="vendor-transform-rotate3d">
+          <h4>Rotate 3D (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.rotate3d(@x: 0, @y: 0, @z: 0, @angle: 0) {
+  .transform3d(~"rotate3d(@{x}, @{y}, @{z}, @{angle})");
+}
+</pre>
+          </div>
+
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-rotate3d {
+  .rotate3d(1, -1, 0, 60deg);
+}
+</pre>
+            <pre class="css">.test-rotate3d {
+  -webkit-transform: rotate3d(1, -1, 0, 60deg);
+     -moz-transform: rotate3d(1, -1, 0, 60deg);
+          transform: rotate3d(1, -1, 0, 60deg);
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="vendor-transform-rotate-x">
+          <h4>Rotate X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.rotateX(@angle: 0) {
+  .transform3d(~"rotateX(@{angle})");
+}
+</pre>
+          </div>
+
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-rotateX {
+  .rotateX(30deg);
+}
+</pre>
+            <pre class="css">.test-rotateX {
+  -webkit-transform: rotateX(30deg);
+     -moz-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="vendor-transform-rotate-y">
+          <h4>Rotate Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.rotateY(@angle: 0) {
+  .transform3d(~"rotateY(@{angle})");
+}
+</pre>
+          </div>
+
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-rotateY {
+  .rotateY(135deg);
+}
+</pre>
+            <pre class="css">.test-rotateY {
+  -webkit-transform: rotateY(135deg);
+     -moz-transform: rotateY(135deg);
+          transform: rotateY(135deg);
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="vendor-transform-rotate-z">
+          <h4>Rotate Z (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.rotateZ(@angle: 0) {
+  .transform3d(~"rotateZ(@{angle})");
+}
+</pre>
+          </div>
+
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-rotateZ {
+  .rotateZ(15deg);
+}
+</pre>
+            <pre class="css">.test-rotateZ {
+  -webkit-transform: rotateZ(15deg);
+     -moz-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="vendor-transform-skew">
+          <h4>Skew (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">..skew(@x-angle: 0, @y-angle) {
+  .transform(~"skew(@{x-angle}, @{y-angle})");
+}
+</pre>
+          </div>
+
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-skew {
+  .skew(45deg, 45deg);
+}
+</pre>
+            <pre class="css">.test-skew {
+  -webkit-transform: skew(45deg, 45deg);
+     -moz-transform: skew(45deg, 45deg);
+      -ms-transform: skew(45deg, 45deg);
+       -o-transform: skew(45deg, 45deg);
+          transform: skew(45deg, 45deg);
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="vendor-transform-skew-x">
+          <h4>Skew X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.skewX(@angle: 0) {
+  .transform(~"skewX(@{angle})");
+}
+</pre>
+          </div>
+
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-skewX {
+  .skewX(60deg);
+}
+</pre>
+            <pre class="css">.test-skewX {
+  -webkit-transform: skewX(60deg);
+     -moz-transform: skewX(60deg);
+      -ms-transform: skewX(60deg);
+       -o-transform: skewX(60deg);
+          transform: skewX(60deg);
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="vendor-transform-skew-y">
+          <h4>Skew Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.skewY(@angle: 0) {
+  .transform(~"skewY(@{angle})");
+}
+</pre>
+          </div>
+
+          Example:
+          <div class="syntax">
+            <pre class="less">.test-skewY {
+  .skewY(30deg);
+}
+</pre>
+            <pre class="css">.test-skewY {
+  -webkit-transform: skewY(30deg);
+     -moz-transform: skewY(30deg);
+      -ms-transform: skewY(30deg);
+       -o-transform: skewY(30deg);
+          transform: skewY(30deg);
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="utilities">
+            <h3>Utilities</h3>
+            How many times have you been in the situation to add the "clearfix" class in a project? Or jumping to <a href="http://www.fontsquirrel.com/" target="_blank"><strong>Font Squirrel</strong></a> to remember how <code>font-face</code> works?
+            <br><br>
+            These mixins try to provide you all these functions you are going to use at least once per project.
+        </section>
+
+        <section id="utilities-center-block">
+            <h4>Center Block</h4>
+            Centers something in the page/container. It must be displayed as a <code>block</code>, so the <code>display: block</code> property is automatically added.
+            <div class="syntax">
+                <pre class="less">.center-block {
+      display: block;
 
    margin-left: auto;
   margin-right: auto;
 }
 </pre>
-                </div>
+            </div>
 
-                As you can see, this mixin is more a class than a real mixin, so that you can use it also in the html of your project.
-            </section>
+            As you can see, this mixin is more a class than a real mixin, so that you can use it also in the html of your project.
+        </section>
 
-            <section id="utilities-clearfix">
-                <h4>Clearfix (<a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">source</a>)</h4>
-                Adding an empty <code>div</code> to clear the floating elements is always really bad practice. With this class we put it in the container block to clear all the elements inside.
-                <div class="syntax">
-                    <pre class="less">.clearfix {
+        <section id="utilities-clearfix">
+            <h4>Clearfix (<a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">source</a>)</h4>
+            Adding an empty <code>div</code> to clear the floating elements is always really bad practice. With this class we put it in the container block to clear all the elements inside.
+            <div class="syntax">
+                <pre class="less">.clearfix {
   *zoom: 1; // 3
 
   &:before,
@@ -858,14 +1062,14 @@
   }
 }
 </pre>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="utilities-font-face">
-                <h4>Font Face</h4>
-                This mixin is more a shortcut than anything else: writing every time all the sources of a font is really boring and many times we do forget something:
-                <div class="syntax">
-                    <pre class="less">.font-face(@font-name, @font-file, @font-weight: normal, @font-style: normal) {
+        <section id="utilities-font-face">
+            <h4>Font Face</h4>
+            This mixin is more a shortcut than anything else: writing every time all the sources of a font is really boring and many times we do forget something:
+            <div class="syntax">
+                <pre class="less">.font-face(@font-name, @font-file, @font-weight: normal, @font-style: normal) {
   @font-face {
     font-family: "@{font-name}";
     src: url("@{font-file}-webfont.eot");
@@ -878,66 +1082,66 @@
   }
 }
 </pre>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="utilities-size">
-                <h4>Size</h4>
-                This mixin stylizes the size of a block (<code>display: block</code> is usually needed).
-                <div class="syntax">
-                    <pre class="less">.size(@width, @height) {
+        <section id="utilities-size">
+            <h4>Size</h4>
+            This mixin stylizes the size of a block (<code>display: block</code> is usually needed).
+            <div class="syntax">
+                <pre class="less">.size(@width, @height) {
    width: @width;
   height: @height;
 }
 </pre>
-                </div>
+            </div>
 
-                If only one argument is passed, the mixin uses that <code>@width</code> also for the <code>@height</code>, like a square:
-                <div class="syntax">
-                    <pre class="less">.size(@square) {
+            If only one argument is passed, the mixin uses that <code>@width</code> also for the <code>@height</code>, like a square:
+            <div class="syntax">
+                <pre class="less">.size(@square) {
   .size(@square, @square);
 }
 </pre>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="utilities-text-truncate">
-                <h4>Text Truncate</h4>
-                When you want to truncate the text, you have to put other properties to make it happen without problems. This mixin put them automatically.
-                <br><br>
-                For it to happen you have to stylize the element as a <code>block</code> or an <code>inline-block</code>
-                <div class="syntax">
-                    <pre class="less">.text-truncate(@truncate-model: clip) {
+        <section id="utilities-text-truncate">
+            <h4>Text Truncate</h4>
+            When you want to truncate the text, you have to put other properties to make it happen without problems. This mixin put them automatically.
+            <br><br>
+            For it to happen you have to stylize the element as a <code>block</code> or an <code>inline-block</code>
+            <div class="syntax">
+                <pre class="less">.text-truncate(@truncate-model: clip) {
        overflow: hidden;
   text-overflow: @truncate-model;
     white-space: nowrap;
 }
 </pre>
-                </div>
+            </div>
 
-                To make design easier there is also a class usable directly in the HTML, that truncates the text with the <code>ellipsis</code> property:
-                <div class="syntax">
-                    <pre class="less">.text-truncate {
+            To make design easier there is also a class usable directly in the HTML, that truncates the text with the <code>ellipsis</code> property:
+            <div class="syntax">
+                <pre class="less">.text-truncate {
   .text-truncate(ellipsis);
 }
 </pre>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-        <script src="js/hiless.js"></script>
+    <script src="js/hiless.js"></script>
 
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
 </html>
