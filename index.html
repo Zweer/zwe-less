@@ -56,6 +56,7 @@
               <li><a href="#vendor-box-shadow">Box Shadow</a></li>
               <li><a href="#vendor-box-sizing">Box Sizing</a></li>
               <li><a href="#vendor-opacity">Opacity</a></li>
+              <li><a href="#vendor-text-overflow">Text Overflow</a></li>
               <li><a href="#vendor-transform">Transform</a></li>
               <li><a href="#vendor-transform-origin">Transform Origin</a></li>
               <li><a href="#vendor-transform-style">Transform Style</a></li>
@@ -393,6 +394,30 @@
             <pre class="css half second">.test-opacity {
   opacity: 0.5;
    filter: alpha(opacity=50);
+}
+</pre>
+        </div>
+      </section>
+
+      <section id="vendor-text-overflow">
+        <h4>Text Overflow (<a href="http://www.w3schools.com/cssref/css3_pr_text-overflow.asp">w3c</a>)</h4>
+        <div class="syntax">
+          <pre class="less">.text-overflow(@overflow: clip) {
+  -o-text-overflow: @overflow;
+     text-overflow: @overflow;
+}
+</pre>
+        </div>
+
+        Example:
+        <div class="syntax">
+          <pre class="less half first">.test-text-overflow {
+  .text-overflow(ellipsis);
+}
+</pre>
+          <pre class="css half second">.test-text-overflow {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 </pre>
         </div>
