@@ -55,6 +55,7 @@
               <li><a href="#vendor-border-radius">Border Radius</a></li>
               <li><a href="#vendor-box-shadow">Box Shadow</a></li>
               <li><a href="#vendor-box-sizing">Box Sizing</a></li>
+              <li><a href="#vendor-inline-block">Inline Block</a></li>
               <li><a href="#vendor-opacity">Opacity</a></li>
               <li><a href="#vendor-text-overflow">Text Overflow</a></li>
               <li><a href="#vendor-transform">Transform</a></li>
@@ -370,6 +371,23 @@
 }
 </pre>
         </div>
+      </section>
+
+      <section id="vendor-inline-block">
+        <h4>Inline Block (<a href="http://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/">Source</a>)</h4>
+        Many browsers don't support the <code>display: inline-block</code> property, so here is the hack:
+        <div class="syntax">
+          <pre class="less">.inline-block {
+         display: -moz-inline-stack;
+         display: inline-block;
+  vertical-align: top; 
+            zoom: 1; 
+        *display: inline; 
+}
+</pre>
+        </div>
+
+        As you can see that is a class, so you can use it directly in the html.
       </section>
 
       <section id="vendor-opacity">
