@@ -72,9 +72,9 @@
 // Text Truncate
 // Requires inline-block or block for proper styling
 .text-truncate(@truncate-model: clip) {
-       overflow: hidden;
-  text-overflow: @truncate-model;
-    white-space: nowrap;
+     overflow: hidden;
+  white-space: nowrap;
+  .text-overflow(@truncate-model);
 }
 .text-truncate {
   .text-truncate(ellipsis);
