@@ -283,12 +283,15 @@
 // Skew
 .skew(@x-angle: 0, @y-angle) {
   .transform(~"skew(@{x-angle}, @{y-angle})");
+  -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
 }
 // Skew X
 .skewX(@angle: 0) {
   .transform(~"skewX(@{angle})");
+  -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
 }
 // Skew Y
 .skewY(@angle: 0) {
   .transform(~"skewY(@{angle})");
+  -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
 }

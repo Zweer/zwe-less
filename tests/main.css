@@ -285,6 +285,7 @@ body {
       -ms-transform: skew(45deg, 45deg);
        -o-transform: skew(45deg, 45deg);
           transform: skew(45deg, 45deg);
+  -webkit-backface-visibility: hidden;
 }
 
 .test-skewX {
@@ -293,6 +294,7 @@ body {
       -ms-transform: skewX(60deg);
        -o-transform: skewX(60deg);
           transform: skewX(60deg);
+  -webkit-backface-visibility: hidden;
 }
 
 .test-skewY {
@@ -301,6 +303,7 @@ body {
       -ms-transform: skewY(30deg);
        -o-transform: skewY(30deg);
           transform: skewY(30deg);
+  -webkit-backface-visibility: hidden;
 }
 
 @font-face {
