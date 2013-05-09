@@ -119,6 +119,11 @@ body {
   filter: alpha(opacity=50);
 }
 
+.test-text-overflow {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
 .test-transform {
   -webkit-transform: rotate(7deg);
      -moz-transform: rotate(7deg);
