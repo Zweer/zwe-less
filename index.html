@@ -979,9 +979,11 @@
 
         <section id="vendor-transform-skew">
           <h4>Skew (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          As stated <a href="https://github.com/twitter/bootstrap/issues/5319" target="_blank">here</a> webkit needs the <code>backface-visibility</code> property to fix a little bug
           <div class="syntax">
-            <pre class="less">..skew(@x-angle: 0, @y-angle) {
+            <pre class="less">.skew(@x-angle: 0, @y-angle) {
   .transform(~"skew(@{x-angle}, @{y-angle})");
+  -webkit-backface-visibility: hidden;
 }
 </pre>
           </div>
@@ -998,6 +1000,7 @@
       -ms-transform: skew(45deg, 45deg);
        -o-transform: skew(45deg, 45deg);
           transform: skew(45deg, 45deg);
+  -webkit-backface-visibility: hidden;
 }
 </pre>
           </div>
@@ -1005,9 +1008,11 @@
 
         <section id="vendor-transform-skew-x">
           <h4>Skew X (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          As stated <a href="https://github.com/twitter/bootstrap/issues/5319" target="_blank">here</a> webkit needs the <code>backface-visibility</code> property to fix a little bug
           <div class="syntax">
             <pre class="less">.skewX(@angle: 0) {
   .transform(~"skewX(@{angle})");
+  -webkit-backface-visibility: hidden;
 }
 </pre>
           </div>
@@ -1024,6 +1029,7 @@
       -ms-transform: skewX(60deg);
        -o-transform: skewX(60deg);
           transform: skewX(60deg);
+  -webkit-backface-visibility: hidden;
 }
 </pre>
           </div>
@@ -1031,9 +1037,11 @@
 
         <section id="vendor-transform-skew-y">
           <h4>Skew Y (<a href="http://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">w3c</a>)</h4>
+          As stated <a href="https://github.com/twitter/bootstrap/issues/5319" target="_blank">here</a> webkit needs the <code>backface-visibility</code> property to fix a little bug
           <div class="syntax">
             <pre class="less">.skewY(@angle: 0) {
   .transform(~"skewY(@{angle})");
+  -webkit-backface-visibility: hidden;
 }
 </pre>
           </div>
@@ -1050,6 +1058,7 @@
       -ms-transform: skewY(30deg);
        -o-transform: skewY(30deg);
           transform: skewY(30deg);
+  -webkit-backface-visibility: hidden;
 }
 </pre>
           </div>
