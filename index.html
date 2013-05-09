@@ -1145,9 +1145,9 @@
             For it to happen you have to stylize the element as a <code>block</code> or an <code>inline-block</code>
             <div class="syntax">
                 <pre class="less">.text-truncate(@truncate-model: clip) {
-       overflow: hidden;
-  text-overflow: @truncate-model;
-    white-space: nowrap;
+     overflow: hidden;
+  white-space: nowrap;
+  .text-overflow(@truncate-model);
 }
 </pre>
             </div>
