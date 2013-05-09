@@ -19,6 +19,8 @@
 // 
 // - Box Sizing
 // 
+// - Inline Box
+// 
 // - Opacity
 // 
 // - Text Overflow
@@ -129,6 +131,15 @@
   -webkit-box-sizing: @box-model; // iOS < 5 & Android < 4 & Blackberry 7
      -moz-box-sizing: @box-model;
           box-sizing: @box-model;
+}
+
+// Inline Block
+.inline-block {
+         display: -moz-inline-stack; // Firefox 2
+         display: inline-block;
+  vertical-align: top; // Resets the default vertical-align that is "baseline"
+            zoom: 1; // Triggers hasLayout on IE < 8
+        *display: inline; // IE < 8
 }
 
 // Opacity

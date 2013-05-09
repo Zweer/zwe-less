@@ -1,3 +1,11 @@
+.inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  zoom: 1;
+}
+
 .center-block {
   display: block;
   margin-right: auto;
