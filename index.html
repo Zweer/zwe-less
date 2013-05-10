@@ -81,6 +81,7 @@
               <li><a href="#vendor-transform-skew">Skew</a></li>
               <li><a href="#vendor-transform-skew-x">Skew X</a></li>
               <li><a href="#vendor-transform-skew-y">Skew Y</a></li>
+              <li><a href="#vendor-user-select">User Select</a></li>
             </ul>
           </li>
 
@@ -1077,6 +1078,36 @@
        -o-transform: skewY(30deg);
           transform: skewY(30deg);
   -webkit-backface-visibility: hidden;
+}
+</pre>
+          </div>
+        </section>
+
+        <section id="vendor-user-select">
+          <h4>User Select (<a href="https://developer.mozilla.org/en-US/docs/CSS/user-select" target="_blank">mozilla</a>)</h4>
+          <div class="syntax">
+            <pre class="less">.user-select(@mode: auto) {
+  -webkit-user-select: @mode;
+     -moz-user-select: @mode;
+      -ms-user-select: @mode;
+       -o-user-select: @mode; // Not yet implemented
+          user-select: @mode; // Not yet implemented
+}
+</pre>
+          </div>
+
+          Example:
+          <div class="syntaxd">
+            <pre class="less half first">.test-user-select {
+  .user-select(none);
+}
+</pre>
+            <pre class="css half second">.test-user-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
 }
 </pre>
           </div>
