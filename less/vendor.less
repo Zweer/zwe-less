@@ -57,6 +57,8 @@
 // -- Skew
 // -- Skew X
 // -- Skew Y
+// 
+// - User Select
 
 // Backface Visibility
 .backface-visibility(@visibility: visible) {
@@ -305,4 +307,13 @@
 .skewY(@angle: 0) {
   .transform(~"skewY(@{angle})");
   -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
+}
+
+// User Select
+.user-select(@mode: auto) {
+  -webkit-user-select: @mode;
+     -moz-user-select: @mode;
+      -ms-user-select: @mode;
+       -o-user-select: @mode; // Not yet implemented
+          user-select: @mode; // Not yet implemented
 }
