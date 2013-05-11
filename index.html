@@ -488,6 +488,8 @@
 }
 </pre>
         </div>
+
+        You will see that all the transformation mixins are part of the <code>#transform</code> object: that is to avoid possible duplicates with other/your mixins
       </section>
 
         <section id="vendor-transform-origin">
@@ -559,7 +561,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-matrix {
-  .matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+  #transform > .matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
 }
 </pre>
             <pre class="css">.test-matrix {
@@ -585,7 +587,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-matrix3d {
-  .matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
+  #transform > .matrix3d(0.866, 0.5, -0.5, 0.866, 0, 0, 0.6, 0.4, 0.34, 0.76, 0.23, 0.2, 0.6, 0.9, -0.4, -0.3);
 }
 </pre>
             <pre class="css">.test-matrix3d {
@@ -609,7 +611,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-translate {
-  .translate(10px, 3px);
+  #transform > .translate(10px, 3px);
 }
 </pre>
             <pre class="css">.test-translate {
@@ -635,7 +637,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-translate3d {
-  .translate3d(10px, 3px, 20px);
+  #transform > .translate3d(10px, 3px, 20px);
 }
 </pre>
             <pre class="css">.test-translate3d {
@@ -659,7 +661,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-translateX {
-  .translateX(10px);
+  #transform > .translateX(10px);
 }
 </pre>
             <pre class="css">.test-translateX {
@@ -685,7 +687,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-translateY {
-  .translateY(3px);
+  #transform > .translateY(3px);
 }
 </pre>
             <pre class="css">.test-translateY {
@@ -711,7 +713,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-translateZ {
-  .translateZ(20px);
+  #transform > .translateZ(20px);
 }
 </pre>
             <pre class="css">.test-translateZ {
@@ -735,7 +737,7 @@
           Example:
           <div class="syntax">
             <pre class="less half first">.test-scale-two-arguments {
-  .scale(2, 3);
+  #transform > .scale(2, 3);
 }
 </pre>
             <pre class="css half second">.test-scale-two-arguments {
@@ -759,7 +761,7 @@
           Example:
           <div class="syntax">
             <pre class="less half first">.test-scale-one-argument {
-  .scale(2);
+  #transform > .scale(2);
 }
 </pre>
             <pre class="css half second">.test-scale-one-argument {
@@ -785,7 +787,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-scale3d {
-  .scale3d(2, 3, 4);
+  #transform > .scale3d(2, 3, 4);
 }
 </pre>
             <pre class="css">.test-scale3d {
@@ -809,7 +811,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-scaleX {
-  .scaleX(2);
+  #transform > .scaleX(2);
 }
 </pre>
             <pre class="css">.test-scaleX {
@@ -835,7 +837,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-scaleY {
-  .scaleY(3);
+  #transform > .scaleY(3);
 }
 </pre>
             <pre class="css">.test-scaleY {
@@ -861,7 +863,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-scaleZ {
-  .scaleZ(4);
+  #transform > .scaleZ(4);
 }
 </pre>
             <pre class="css">.test-scaleZ {
@@ -885,7 +887,7 @@
           Example:
           <div class="syntax">
             <pre class="less half first">.test-rotate {
-  .rotate(45deg);
+  #transform > .rotate(45deg);
 }
 </pre>
             <pre class="css half second">.test-rotate {
@@ -911,7 +913,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-rotate3d {
-  .rotate3d(1, -1, 0, 60deg);
+  #transform > .rotate3d(1, -1, 0, 60deg);
 }
 </pre>
             <pre class="css">.test-rotate3d {
@@ -935,7 +937,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-rotateX {
-  .rotateX(30deg);
+  #transform > .rotateX(30deg);
 }
 </pre>
             <pre class="css">.test-rotateX {
@@ -959,7 +961,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-rotateY {
-  .rotateY(135deg);
+  #transform > .rotateY(135deg);
 }
 </pre>
             <pre class="css">.test-rotateY {
@@ -983,7 +985,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-rotateZ {
-  .rotateZ(15deg);
+  #transform > .rotateZ(15deg);
 }
 </pre>
             <pre class="css">.test-rotateZ {
@@ -1009,7 +1011,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-skew {
-  .skew(45deg, 45deg);
+  #transform > .skew(45deg, 45deg);
 }
 </pre>
             <pre class="css">.test-skew {
@@ -1038,7 +1040,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-skewX {
-  .skewX(60deg);
+  #transform > .skewX(60deg);
 }
 </pre>
             <pre class="css">.test-skewX {
@@ -1067,7 +1069,7 @@
           Example:
           <div class="syntax">
             <pre class="less">.test-skewY {
-  .skewY(30deg);
+  #transform > .skewY(30deg);
 }
 </pre>
             <pre class="css">.test-skewY {
