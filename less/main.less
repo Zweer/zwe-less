@@ -1,9 +1,11 @@
 @import "zwe";
 
 @containerWidth: 980px;
+@fontText: 'Open Sans', sans-serif;
+@fontTitle: 'Titillium Web', sans-serif;
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: @fontText;
   font-weight: 300;
   font-size: 14px;
 }
@@ -14,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: @fontTitle;
   font-weight: 400;
 }
 
@@ -23,7 +25,7 @@ a {
 }
 
 strong {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: @fontTitle;
 }
 
 code {
@@ -146,57 +148,78 @@ header {
   }
 }
 
+nav {
+  @background: #3f0c31;
+  background: @background;
+  height: 40px;
+
+  ul {
+    width: @containerWidth;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    .center-block;
+
+    li {
+      float: left;
+      margin: 0;
+      position: relative;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-family: @fontTitle;
+
+        padding: 10px 20px;
+
+        display: block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      ul {
+        display: none;
+
+        position: absolute;
+        top: 35px;
+        left: 0;
+        float: left;
+
+        z-index: 2;
+
+        width: 200px;
+
+        background: @background;
+
+        .border-bottom-radius(5px);
+
+        li {
+          float: none;
+
+          a {
+            padding: 5px 10px;
+          }
+        }
+      }
+
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 .container {
   width: 980px;
   margin-top: 20px;
 
   .center-block;
-
-  nav {
-    float: left;
-    width: 300px;
-    border: 1px solid rgba(0, 0, 0, .2);
-
-    .border-radius(5px);
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        border-top: 1px solid rgba(0, 0, 0, .2);
-
-        &:first-child {
-          border-top-width: 0;
-        }
-
-        a {
-          text-decoration: none;
-          display: block;
-          color: black;
-          padding: 5px 20px;
-
-          &:hover {
-            background: #b00;
-            color: white;
-          }
-        }
-
-        ul {
-          li {
-            &:first-child {
-              border-top-width: 1px;
-            }
-
-            a {
-              padding-left: 40px;
-            }
-          }
-        }
-      }
-    }
-  }
 
   section {
     margin-left: 330px;
