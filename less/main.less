@@ -1,6 +1,6 @@
 @import "zwe";
 
-@containerWidth: 980px;
+@containerWidth: 800px;
 @fontText: 'Open Sans', sans-serif;
 @fontTitle: 'Titillium Web', sans-serif;
 
@@ -216,21 +216,21 @@ nav {
 }
 
 .container {
-  width: 980px;
+  width: @containerWidth;
   margin-top: 20px;
 
   .center-block;
 
   section {
-    margin-left: 330px;
-
     h3 {
       font-size: 24px;
       color: #800;
+      margin: 1em 0;
     }
     h4 {
       font-size: 22px;
       color: #800;
+      margin: 1em 0;
 
       a {
         text-decoration: none;
@@ -251,17 +251,22 @@ nav {
 
     &#variables-colors {
       .grayscale {
-        height: 70px;
+        height: @containerWidth / 10;
         margin: 0;
+        margin-top: 10px;
         padding: 0;
         list-style: none;
 
         li {
           float: left;
-          margin-left: 2px;
+          margin-left: @containerWidth / 80;
 
-          .size(70px);
+          .size(@containerWidth / 10);
           .border-radius(4px);
+
+          &:first-child {
+            margin-left: 0;
+          }
 
           &.black-10 {
             background: @black-10;

@@ -143,7 +143,7 @@ header {
 
 header hgroup {
   display: block;
-  width: 980px;
+  width: 800px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-right: auto;
@@ -182,7 +182,7 @@ nav {
 
 nav ul {
   display: block;
-  width: 980px;
+  width: 800px;
   padding: 0;
   margin: 0;
   margin-right: auto;
@@ -236,22 +236,20 @@ nav ul li:hover ul {
 
 .container {
   display: block;
-  width: 980px;
+  width: 800px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.container section {
-  margin-left: 330px;
-}
-
 .container section h3 {
+  margin: 1em 0;
   font-size: 24px;
   color: #800;
 }
 
 .container section h4 {
+  margin: 1em 0;
   font-size: 22px;
   color: #800;
 }
@@ -281,19 +279,24 @@ nav ul li:hover ul {
 }
 
 .container section#variables-colors .grayscale {
-  height: 70px;
+  height: 80px;
   padding: 0;
   margin: 0;
+  margin-top: 10px;
   list-style: none;
 }
 
 .container section#variables-colors .grayscale li {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-left: 2px;
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
   border-radius: 4px;
   background-clip: padding-box;
+}
+
+.container section#variables-colors .grayscale li:first-child {
+  margin-left: 0;
 }
 
 .container section#variables-colors .grayscale li.black-10 {
