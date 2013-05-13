@@ -57,6 +57,7 @@
               <li><a href="#vendor-box-sizing">Box Sizing</a></li>
               <li><a href="#vendor-inline-block">Inline Block</a></li>
               <li><a href="#vendor-opacity">Opacity</a></li>
+              <li><a href="#vendor-resize">Resize</a></li>
               <li><a href="#vendor-text-overflow">Text Overflow</a></li>
               <li><a href="#vendor-transform">Transform</a></li>
               <li><a href="#vendor-transform-origin">Transform Origin</a></li>
@@ -413,6 +414,31 @@
             <pre class="css half second">.test-opacity {
   opacity: 0.5;
    filter: alpha(opacity=50);
+}
+</pre>
+        </div>
+      </section>
+
+      <section id="vendor-resize">
+        <h4>Resize</h4>
+        This mixin has been added only to fix a Safari Issue:
+        <div class="syntax">
+          <pre class="less">.resize(@direction: none) {
+    resize: @direction;
+  overflow: auto; // Safari fix
+}
+</pre>
+        </div>
+
+        Example:
+        <div class="syntax">
+          <pre class="less half first">.test-resize {
+  .resize(horizontal);
+}
+</pre>
+          <pre class="css half second">.test-resize {
+  overflow: auto;
+  resize: horizontal;
 }
 </pre>
         </div>
