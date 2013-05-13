@@ -11,16 +11,16 @@
 
 // Center Block
 .center-block {
-    display: block;
+       display: block;
 
-     margin-left: auto;
-    margin-right: auto;
+   margin-left: auto;
+  margin-right: auto;
 }
 
 // Clearfix
 // This is not a mixin but a class because in this way it's easier to use directly in HTML
 // 
-// // Source: http://nicolasgallagher.com/micro-clearfix-hack/
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
 //
 // For modern browsers
 // 1. The space content is one way to avoid an Opera bug when the
@@ -29,7 +29,11 @@
 //    that are clearfixed.
 // 2. The use of `table` rather than `block` is only necessary if using
 //    `:before` to contain the top-margins of child elements.
+// 3. For IE 6/7 only
+//    Triggers `hasLayout`
 .clearfix {
+  *zoom: 1; // 3
+
   &:before,
   &:after {
     content: " "; // 1
@@ -42,36 +46,36 @@
 
 // Font Face
 .font-face(@font-name, @font-file, @font-weight: normal, @font-style: normal) {
-    @font-face {
-        font-family: "@{font-name}";
-        src: url("@{font-file}-webfont.eot");
-        src: url("@{font-file}-webfont.eot?#iefix") format("embedded-opentype"),
-             url("@{font-file}-webfont.woff") format("woff"),
-             url("@{font-file}-webfont.ttf") format("truetype"),
-             url("@{font-file}-webfont.svg#@{font-name}") format("svg");
-        font-weight: @font-weight;
-        font-style: @font-style;
-    }
+  @font-face {
+    font-family: "@{font-name}";
+    src: url("@{font-file}-webfont.eot");
+    src: url("@{font-file}-webfont.eot?#iefix") format("embedded-opentype"),
+         url("@{font-file}-webfont.woff") format("woff"),
+         url("@{font-file}-webfont.ttf") format("truetype"),
+         url("@{font-file}-webfont.svg#@{font-name}") format("svg");
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
 }
 
 // Size
 // Square
 .size(@square) {
-    .size(@square, @square);
+  .size(@square, @square);
 }
 // Rectangle
 .size(@width, @height) {
-     width: @width;
-    height: @height;
+   width: @width;
+  height: @height;
 }
 
 // Text Truncate
 // Requires inline-block or block for proper styling
-.text-truncate(@truncate-model: ellipsis) {
-    overflow: hidden;
-    text-overflow: @truncate-model;
-    white-space: nowrap;
+.text-truncate(@truncate-model: clip) {
+     overflow: hidden;
+  white-space: nowrap;
+  .text-overflow(@truncate-model);
 }
 .text-truncate {
-  .text-truncate();
+  .text-truncate(ellipsis);
 }
