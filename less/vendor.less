@@ -23,6 +23,8 @@
 // 
 // - Opacity
 // 
+// - Resize
+// 
 // - Text Overflow
 // 
 // - Transition
@@ -150,6 +152,12 @@
 
   @opacity-ie: @opacity * 100;
   filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
+
+// Resize
+.resize(@direction: none) {
+    resize: @direction;
+  overflow: auto; // Safari fix
 }
 
 // Text Overflow
