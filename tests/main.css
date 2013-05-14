@@ -138,6 +138,41 @@ body {
      text-overflow: ellipsis;
 }
 
+.test-transition {
+  -webkit-transition: width 2s;
+     -moz-transition: width 2s;
+       -o-transition: width 2s;
+          transition: width 2s;
+}
+
+.test-transition-delay {
+  -webkit-transition-delay: 2s;
+     -moz-transition-delay: 2s;
+       -o-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.test-transition-duration {
+  -webkit-transition-duration: 5s;
+     -moz-transition-duration: 5s;
+       -o-transition-duration: 5s;
+          transition-duration: 5s;
+}
+
+.test-transition-property {
+  -webkit-transition-property: width;
+     -moz-transition-property: width;
+       -o-transition-property: width;
+          transition-property: width;
+}
+
+.test-transition-timing-function {
+  -webkit-transition-timing-function: linear;
+     -moz-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
 .test-transform {
   -webkit-transform: rotate(7deg);
      -moz-transform: rotate(7deg);
