@@ -1,4 +1,4 @@
-# ZweLess
+# ZweLess v1.0.0
 
 **ZweLess** is a [LESS](http://lesscss.org/) library that includes a lot of mixins and variables to help you styling a website. 
 Nowadays there are a lot of different browsers, each with its set of prefixed properties and incompatibilities. 
