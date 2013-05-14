@@ -40,6 +40,8 @@
 
         <li><a href="#installation">Installation</a></li>
 
+        <li><a href="#known-bugs">Known Bugs</a></li>
+
         <li>
           <a href="#variables">Variables</a>
           <ul>
@@ -106,6 +108,7 @@
             <li><a href="#utilities-center-block">Center Block</a></li>
             <li><a href="#utilities-clearfix">Clearfix</a></li>
             <li><a href="#utilities-font-face">Font Face</a></li>
+            <li><a href="#utilities-lists">Lists</a></li>
             <li><a href="#utilities-size">Size</a></li>
             <li><a href="#utilities-text-truncate">Text Truncate</a></li>
           </ul>
@@ -1327,6 +1330,29 @@
 }
 </pre>
             </div>
+        </section>
+
+        <section id="utilities-lists">
+          <h4>Lists</h4>
+          These classes help you styling easily the lists:
+          <div class="syntax">
+            <pre class="less first half">.list-unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+</pre>
+            <pre class="less second half">.list-inline {
+  .list-unstyled;
+
+  > li {
+    .inline-block;
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+</pre>
+          </div>
         </section>
 
         <section id="utilities-size">
