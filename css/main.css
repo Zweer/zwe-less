@@ -188,6 +188,10 @@ header hgroup a#download {
   background-clip: padding-box;
 }
 
+.fixed header {
+  margin-bottom: 60px;
+}
+
 nav {
   z-index: 2;
   width: 100%;
@@ -259,7 +263,7 @@ nav > ul > li:hover > ul {
   display: block;
 }
 
-nav.fixed {
+.fixed nav {
   position: fixed;
   top: 0;
   left: 0;

@@ -1,16 +1,16 @@
 (function($) {
-  var $nav = $('nav[role="main"]'),
+  var $body = $('body'),
       navTop = 0;
 
   $(function() {
-    navTop = $nav.position().top;
+    navTop = $('nav[role="main"]').position().top;
   });
 
   $(window).scroll(function() {
     if (navTop < $(window).scrollTop()) {
-      $nav.addClass('fixed');
+      $body.addClass('fixed');
     } else {
-      $nav.removeClass('fixed');
+      $body.removeClass('fixed');
     }
   });
 })(window.jQuery);
