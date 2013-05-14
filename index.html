@@ -59,12 +59,22 @@
             <li><a href="#vendor-opacity">Opacity</a></li>
             <li><a href="#vendor-resize">Resize</a></li>
             <li><a href="#vendor-text-overflow">Text Overflow</a></li>
-            <li><a href="#vendor-transform">Transform</a></li>
-            <li><a href="#vendor-transform-origin">Transform Origin</a></li>
-            <li><a href="#vendor-transform-style">Transform Style</a></li>
             <li>
-              <a href="javascript:;">Transformations</a>
+              <a href="javascript:;">Transition</a>
               <ul>
+                <li><a href="#vendor-transition">Transition</a></li>
+                <li><a href="#vendor-transition-delay">Transition Delay</a></li>
+                <li><a href="#vendor-transition-duration">Transition Duration</a></li>
+                <li><a href="#vendor-transition-property">Transition Property</a></li>
+                <li><a href="#vendor-transition-timing-function">Transition Timing Function</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">Transform</a>
+              <ul class="transform">
+                <li><a href="#vendor-transform">Transform</a></li>
+                <li><a href="#vendor-transform-origin">Transform Origin</a></li>
+                <li><a href="#vendor-transform-style">Transform Style</a></li>
                 <li><a href="#vendor-transform-matrix">Matrix</a></li>
                 <li><a href="#vendor-transform-matrix3d">Matrix 3D</a></li>
                 <li><a href="#vendor-transform-translate">Translate</a></li>
@@ -468,6 +478,146 @@
           <pre class="css second half">.test-text-overflow {
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+}
+</pre>
+        </div>
+      </section>
+
+      <section id="vendor-transition">
+        <h4>Transition (<a href="http://www.w3schools.com/cssref/css3_pr_transition.asp" target="_blank">w3c</a>)</h4>
+        <div class="syntax">
+          <pre class="less">.transition(@transition: all 0 ease 0) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+</pre>
+        </div>
+
+        Example:
+        <div class="syntax">
+          <pre class="less first half">.test-transition {
+  .transition(width 2s);
+}
+</pre>
+          <pre class="css second half">.test-transition {
+  -webkit-transition: width 2s;
+     -moz-transition: width 2s;
+       -o-transition: width 2s;
+          transition: width 2s;
+}
+</pre>
+        </div>
+      </section>
+
+      <section id="vendor-transition-delay">
+        <h4>Transition Delay (<a href="http://www.w3schools.com/cssref/css3_pr_transition-delay.asp" target="_blank">w3c</a>)</h4>
+        <div class="syntax">
+          <pre class="less">.transition-delay(@delay: 0) {
+  -webkit-transition-delay: @delay;
+     -moz-transition-delay: @delay;
+       -o-transition-delay: @delay;
+          transition-delay: @delay;
+}
+</pre>
+        </div>
+
+        Example:
+        <div class="syntax">
+          <pre class="less first half">.test-transition-delay {
+  .transition-delay(2s);
+}
+</pre>
+          <pre class="css second half">.test-transition-delay {
+  -webkit-transition-delay: 2s;
+     -moz-transition-delay: 2s;
+       -o-transition-delay: 2s;
+          transition-delay: 2s;
+}
+</pre>
+        </div>
+      </section>
+
+      <section id="vendor-transition">
+        <h4>Transition Duration (<a href="http://www.w3schools.com/cssref/css3_pr_transition-duration.asp" target="_blank">w3c</a>)</h4>
+        <div class="syntax">
+          <pre class="less">.transition-duration(@duration: 0) {
+  -webkit-transition-duration: @duration;
+     -moz-transition-duration: @duration;
+       -o-transition-duration: @duration;
+          transition-duration: @duration;
+}
+</pre>
+        </div>
+
+        Example:
+        <div class="syntax">
+          <pre class="less first half">.test-transition-duration {
+  .transition-duration(5s);
+}
+</pre>
+          <pre class="css second half">.test-transition-duration {
+  -webkit-transition-duration: 5s;
+     -moz-transition-duration: 5s;
+       -o-transition-duration: 5s;
+          transition-duration: 5s;
+}
+</pre>
+        </div>
+      </section>
+
+      <section id="vendor-transition">
+        <h4>Transition Property (<a href="http://www.w3schools.com/cssref/css3_pr_transition-property.asp" target="_blank">w3c</a>)</h4>
+        <div class="syntax">
+          <pre class="less">.transition-property(@property: all) {
+  -webkit-transition-property: @property;
+     -moz-transition-property: @property;
+       -o-transition-property: @property;
+          transition-property: @property;
+}
+</pre>
+        </div>
+
+        Example:
+        <div class="syntax">
+          <pre class="less first half">.test-transition-property {
+  .transition-property(width);
+}
+</pre>
+          <pre class="css second half">.test-transition-property {
+  -webkit-transition-property: width;
+     -moz-transition-property: width;
+       -o-transition-property: width;
+          transition-property: width;
+}
+</pre>
+        </div>
+      </section>
+
+      <section id="vendor-transition">
+        <h4>Transition Timing Function (<a href="http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp" target="_blank">w3c</a>)</h4>
+        <div class="syntax">
+          <pre class="less">.transition-timing-function(@function: ease) {
+  -webkit-transition-timing-function: @function;
+     -moz-transition-timing-function: @function;
+       -o-transition-timing-function: @function;
+          transition-timing-function: @function;
+}
+</pre>
+        </div>
+
+        Example:
+        <div class="syntax">
+          <pre class="less first half">.test-transition-timing-function {
+  .transition-timing-function(linear);
+}
+</pre>
+          <pre class="css second half">.test-transition-timing-function {
+  -webkit-transition-timing-function: linear;
+     -moz-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 </pre>
         </div>
