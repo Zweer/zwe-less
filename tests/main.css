@@ -156,6 +156,326 @@ body {
   filter: alpha(opacity=50);
 }
 
+.test-placeholder-background:-moz-placeholder {
+  background: #ffff00;
+}
+
+.test-placeholder-background::-moz-placeholder {
+  background: #ffff00;
+}
+
+.test-placeholder-background:-ms-input-placeholder {
+  background: #ffff00;
+}
+
+.test-placeholder-background::-webkit-input-placeholder {
+  background: #ffff00;
+}
+
+.test-placeholder-background:-moz-placeholder {
+  background: #ffff00;
+}
+
+.test-placeholder-background::-moz-placeholder {
+  background: #ffff00;
+}
+
+.test-placeholder-background:-ms-input-placeholder {
+  background: #ffff00;
+}
+
+.test-placeholder-background::-webkit-input-placeholder {
+  background: #ffff00;
+}
+
+.test-placeholder-color:-moz-placeholder {
+  color: #ff0000;
+}
+
+.test-placeholder-color::-moz-placeholder {
+  color: #ff0000;
+}
+
+.test-placeholder-color:-ms-input-placeholder {
+  color: #ff0000;
+}
+
+.test-placeholder-color::-webkit-input-placeholder {
+  color: #ff0000;
+}
+
+.test-placeholder-color:-moz-placeholder {
+  color: #ff0000;
+}
+
+.test-placeholder-color::-moz-placeholder {
+  color: #ff0000;
+}
+
+.test-placeholder-color:-ms-input-placeholder {
+  color: #ff0000;
+}
+
+.test-placeholder-color::-webkit-input-placeholder {
+  color: #ff0000;
+}
+
+.test-placeholder-font:-moz-placeholder {
+  font: 12px bold;
+}
+
+.test-placeholder-font::-moz-placeholder {
+  font: 12px bold;
+}
+
+.test-placeholder-font:-ms-input-placeholder {
+  font: 12px bold;
+}
+
+.test-placeholder-font::-webkit-input-placeholder {
+  font: 12px bold;
+}
+
+.test-placeholder-font:-moz-placeholder {
+  font: 12px bold;
+}
+
+.test-placeholder-font::-moz-placeholder {
+  font: 12px bold;
+}
+
+.test-placeholder-font:-ms-input-placeholder {
+  font: 12px bold;
+}
+
+.test-placeholder-font::-webkit-input-placeholder {
+  font: 12px bold;
+}
+
+.test-placeholder-font-size:-moz-placeholder {
+  font-style: 12px;
+}
+
+.test-placeholder-font-size::-moz-placeholder {
+  font-style: 12px;
+}
+
+.test-placeholder-font-size:-ms-input-placeholder {
+  font-style: 12px;
+}
+
+.test-placeholder-font-size::-webkit-input-placeholder {
+  font-style: 12px;
+}
+
+.test-placeholder-font-size:-moz-placeholder {
+  font-style: 12px;
+}
+
+.test-placeholder-font-size::-moz-placeholder {
+  font-style: 12px;
+}
+
+.test-placeholder-font-size:-ms-input-placeholder {
+  font-style: 12px;
+}
+
+.test-placeholder-font-size::-webkit-input-placeholder {
+  font-style: 12px;
+}
+
+.test-placeholder-font-style:-moz-placeholder {
+  font-style: italic;
+}
+
+.test-placeholder-font-style::-moz-placeholder {
+  font-style: italic;
+}
+
+.test-placeholder-font-style:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.test-placeholder-font-style::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.test-placeholder-font-style:-moz-placeholder {
+  font-style: italic;
+}
+
+.test-placeholder-font-style::-moz-placeholder {
+  font-style: italic;
+}
+
+.test-placeholder-font-style:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.test-placeholder-font-style::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.test-placeholder-font-variant:-moz-placeholder {
+  font-variant: small-caps;
+}
+
+.test-placeholder-font-variant::-moz-placeholder {
+  font-variant: small-caps;
+}
+
+.test-placeholder-font-variant:-ms-input-placeholder {
+  font-variant: small-caps;
+}
+
+.test-placeholder-font-variant::-webkit-input-placeholder {
+  font-variant: small-caps;
+}
+
+.test-placeholder-font-variant:-moz-placeholder {
+  font-variant: small-caps;
+}
+
+.test-placeholder-font-variant::-moz-placeholder {
+  font-variant: small-caps;
+}
+
+.test-placeholder-font-variant:-ms-input-placeholder {
+  font-variant: small-caps;
+}
+
+.test-placeholder-font-variant::-webkit-input-placeholder {
+  font-variant: small-caps;
+}
+
+.test-placeholder-font-weight:-moz-placeholder {
+  font-weight: bold;
+}
+
+.test-placeholder-font-weight::-moz-placeholder {
+  font-weight: bold;
+}
+
+.test-placeholder-font-weight:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+.test-placeholder-font-weight::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+.test-placeholder-font-weight:-moz-placeholder {
+  font-weight: bold;
+}
+
+.test-placeholder-font-weight::-moz-placeholder {
+  font-weight: bold;
+}
+
+.test-placeholder-font-weight:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+.test-placeholder-font-weight::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+.test-placeholder-letter-spacing:-moz-placeholder {
+  letter-spacing: 3px;
+}
+
+.test-placeholder-letter-spacing::-moz-placeholder {
+  letter-spacing: 3px;
+}
+
+.test-placeholder-letter-spacing:-ms-input-placeholder {
+  letter-spacing: 3px;
+}
+
+.test-placeholder-letter-spacing::-webkit-input-placeholder {
+  letter-spacing: 3px;
+}
+
+.test-placeholder-letter-spacing:-moz-placeholder {
+  letter-spacing: 3px;
+}
+
+.test-placeholder-letter-spacing::-moz-placeholder {
+  letter-spacing: 3px;
+}
+
+.test-placeholder-letter-spacing:-ms-input-placeholder {
+  letter-spacing: 3px;
+}
+
+.test-placeholder-letter-spacing::-webkit-input-placeholder {
+  letter-spacing: 3px;
+}
+
+.test-placeholder-text-decoration:-moz-placeholder {
+  text-decoration: underline;
+}
+
+.test-placeholder-text-decoration::-moz-placeholder {
+  text-decoration: underline;
+}
+
+.test-placeholder-text-decoration:-ms-input-placeholder {
+  text-decoration: underline;
+}
+
+.test-placeholder-text-decoration::-webkit-input-placeholder {
+  text-decoration: underline;
+}
+
+.test-placeholder-text-decoration:-moz-placeholder {
+  text-decoration: underline;
+}
+
+.test-placeholder-text-decoration::-moz-placeholder {
+  text-decoration: underline;
+}
+
+.test-placeholder-text-decoration:-ms-input-placeholder {
+  text-decoration: underline;
+}
+
+.test-placeholder-text-decoration::-webkit-input-placeholder {
+  text-decoration: underline;
+}
+
+.test-placeholder-text-transform:-moz-placeholder {
+  text-transform: capitalize;
+}
+
+.test-placeholder-text-transform::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+.test-placeholder-text-transform:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.test-placeholder-text-transform::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.test-placeholder-text-transform:-moz-placeholder {
+  text-transform: capitalize;
+}
+
+.test-placeholder-text-transform::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+.test-placeholder-text-transform:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.test-placeholder-text-transform::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
 .test-resize {
   overflow: auto;
   resize: horizontal;

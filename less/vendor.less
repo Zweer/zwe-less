@@ -23,6 +23,19 @@
 // 
 // - Opacity
 // 
+// - Placeholder
+// -- Background
+// -- Color
+// -- Font
+// -- Font Size
+// -- Font Style
+// -- Font Variant
+// -- Font Weight
+// -- Letter Spacing
+// -- Text Decoration
+// -- Text Transform
+// 
+// 
 // - Resize
 // 
 // - Text Overflow
@@ -154,6 +167,89 @@
   filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
 }
 
+// Placeholder
+#placeholder {
+  // Background
+  .background(@background: none) {
+    &:-moz-placeholder            { background: @background; } // Firefox 4-18
+    &::-moz-placeholder           { background: @background; } // Firefox 19+
+    &:-ms-input-placeholder       { background: @background; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { background: @background; } // Safari and Chrome
+  }
+
+  // Color
+  .color(@color: inherit) {
+    &:-moz-placeholder            { color: @color; } // Firefox 4-18
+    &::-moz-placeholder           { color: @color; } // Firefox 19+
+    &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+  }
+
+  // Font
+  .font(@font: inherit) {
+    &:-moz-placeholder            { font: @font; } // Firefox 4-18
+    &::-moz-placeholder           { font: @font; } // Firefox 19+
+    &:-ms-input-placeholder       { font: @font; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { font: @font; } // Safari and Chrome
+  }
+
+  // Font Size
+  .font-size(@size: medium) {
+    &:-moz-placeholder            { font-style: @size; } // Firefox 4-18
+    &::-moz-placeholder           { font-style: @size; } // Firefox 19+
+    &:-ms-input-placeholder       { font-style: @size; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { font-style: @size; } // Safari and Chrome
+  }
+
+  // Font Style
+  .font-style(@style: normal) {
+    &:-moz-placeholder            { font-style: @style; } // Firefox 4-18
+    &::-moz-placeholder           { font-style: @style; } // Firefox 19+
+    &:-ms-input-placeholder       { font-style: @style; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { font-style: @style; } // Safari and Chrome
+  }
+
+  // Font Variant
+  .font-variant(@variant: normal) {
+    &:-moz-placeholder            { font-variant: @variant; } // Firefox 4-18
+    &::-moz-placeholder           { font-variant: @variant; } // Firefox 19+
+    &:-ms-input-placeholder       { font-variant: @variant; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { font-variant: @variant; } // Safari and Chrome
+  }
+
+  // Font Weight
+  .font-weight(@weight: normal) {
+    &:-moz-placeholder            { font-weight: @weight; } // Firefox 4-18
+    &::-moz-placeholder           { font-weight: @weight; } // Firefox 19+
+    &:-ms-input-placeholder       { font-weight: @weight; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { font-weight: @weight; } // Safari and Chrome
+  }
+
+  // Letter Spacing
+  .letter-spacing(@spacing: normal) {
+    &:-moz-placeholder            { letter-spacing: @spacing; } // Firefox 4-18
+    &::-moz-placeholder           { letter-spacing: @spacing; } // Firefox 19+
+    &:-ms-input-placeholder       { letter-spacing: @spacing; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { letter-spacing: @spacing; } // Safari and Chrome
+  }
+
+  // Text Decoration
+  .text-decoration(@decoration: none) {
+    &:-moz-placeholder            { text-decoration: @decoration; } // Firefox 4-18
+    &::-moz-placeholder           { text-decoration: @decoration; } // Firefox 19+
+    &:-ms-input-placeholder       { text-decoration: @decoration; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { text-decoration: @decoration; } // Safari and Chrome
+  }
+
+  // Text Transform
+  .text-transform(@transform: none) {
+    &:-moz-placeholder            { text-transform: @transform; } // Firefox 4-18
+    &::-moz-placeholder           { text-transform: @transform; } // Firefox 19+
+    &:-ms-input-placeholder       { text-transform: @transform; } // Internet Explorer 10+
+    &::-webkit-input-placeholder  { text-transform: @transform; } // Safari and Chrome
+  }
+ }
+  
 // Resize
 .resize(@direction: none) {
     resize: @direction;
