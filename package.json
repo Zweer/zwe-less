@@ -3,7 +3,7 @@
   , "description": "A collection of LESS mixins and variables."
   , "version": "0.0.1"
   , "keywords": ["zweless", "css", "less"]
-  , "author": "Niccolò Olivieri"
+  , "author": "Niccolò Olivieri <flicofloc@gmail.com>"
   , "repository": {
       "type": "git"
     , "url": "https://github.com/Zweer/zwe-less.git"
