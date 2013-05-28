@@ -6,6 +6,9 @@
 // Table of contents:
 // - Center Block
 // - Clearfix
+// - Descriptions
+// -- Description Vertical
+// -- Description Horizontal
 // - Font Face
 // - Lists
 // -- List Unstyled
@@ -48,6 +51,33 @@
   &:after {
     clear: both;
   }
+}
+
+// Descriptions
+// Description Vertical
+.description-vertical {
+	dt {
+		font-weight: bold;
+	}
+
+	dd {
+		margin-left: 10px;
+	}
+}
+// Description Horizontal
+.description-horizontal {
+	dt {
+		float: left;
+		width: 160px;
+		clear: left;
+		text-align: right;
+
+		.text-truncate;
+	}
+
+	dd {
+		margin-left: 180px;
+	}
 }
 
 // Font Face

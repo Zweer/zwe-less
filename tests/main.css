@@ -34,6 +34,31 @@
   clear: both;
 }
 
+.description-vertical dt {
+  font-weight: bold;
+}
+
+.description-vertical dd {
+  margin-left: 10px;
+}
+
+.description-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  -o-text-overflow: clip;
+  -o-text-overflow: ellipsis;
+     text-overflow: clip;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description-horizontal dd {
+  margin-left: 180px;
+}
+
 .list-unstyled {
   margin-left: 0;
   list-style: none;
