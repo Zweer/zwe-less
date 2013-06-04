@@ -60,12 +60,12 @@
 }
 
 .list-unstyled {
-  margin-left: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 .list-inline {
-  margin-left: 0;
+  padding-left: 0;
   list-style: none;
 }
 
