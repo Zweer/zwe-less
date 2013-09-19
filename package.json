@@ -10,7 +10,7 @@
   }
   , "licenses": [{
       "type": "MIT"
-    , "url": "http://opensource.org/licenses/mit-license.php"
+    , "url": "https://github.com/Zweer/zwe-less/blob/master/LICENSE"
   }]
   , "devDependencies": {
       "grunt": "~0.4.1"
