@@ -1,0 +1,28 @@
+//----------------------------------------//
+//               $FONT-FACE               //
+//----------------------------------------//
+.font-face(@font-name, @font-file, @font-weight: normal, @font-style: normal) {
+  @font-face {
+    font-family: "@{font-name}";
+    src: url("@{font-file}-webfont.eot");
+    src: url("@{font-file}-webfont.eot?#iefix") format("embedded-opentype"),
+    url("@{font-file}-webfont.woff") format("woff"),
+    url("@{font-file}-webfont.ttf") format("truetype"),
+    url("@{font-file}-webfont.svg#@{font-name}") format("svg");
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
+}
+
+//----------------------------------------//
+//             $TEXT-TRUNCATE             //
+//----------------------------------------//
+// Requires inline-block or block for proper styling
+.text-truncate(@truncate-model: clip) {
+  overflow: hidden;
+  white-space: nowrap;
+  .text-overflow(@truncate-model);
+}
+.text-truncate {
+  .text-truncate(ellipsis);
+}
