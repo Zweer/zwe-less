@@ -1,40 +1,36 @@
-/*----------------------------------------*\
- *                Utilities               *
-\*----------------------------------------*/
+//----------------------------------------//
+//                Utilities               //
+//----------------------------------------//
 
-/**
- * Here are all the mixins and classes that could really help the developer with
- * his/her pages.
- */
+// Here are all the mixins and classes that could really help the developer with
+// his/her pages.
 
-/*----------------------------------------*\
- *              $DEPENDENCIES             *
-\*----------------------------------------*/
+//----------------------------------------//
+//              $DEPENDENCIES             //
+//----------------------------------------//
 @import "vendor";
 
-/**
-  * ----------------------------------------
-  * $CONTENTS
-  * ----------------------------------------
-  * CONTENTS
-  * CENTER BLOCK
-  * CLEARFIX
-  * DESCRIPTIONS
-  *   DESCRIPTION-VERTICAL
-  *   DESCRIPTION-HORIZONTAL
-  * FONT-FACE
-  * LISTS
-  *   LIST-UNSTYLED
-  *   LIST-INLINE
-  * SIZE
-  *   SIZE-SQUARE
-  *   SIZE-RECTANGLE
-  * TEXT-TRUNCATE
-  */
+// ----------------------------------------
+// $CONTENTS
+// ----------------------------------------
+// CONTENTS
+// CENTER BLOCK
+// CLEARFIX
+// DESCRIPTIONS
+//   DESCRIPTION-VERTICAL
+//   DESCRIPTION-HORIZONTAL
+// FONT-FACE
+// LISTS
+//   LIST-UNSTYLED
+//   LIST-INLINE
+// SIZE
+//   SIZE-SQUARE
+//   SIZE-RECTANGLE
+// TEXT-TRUNCATE
 
-/*----------------------------------------*\
- *              $CENTER-BLOCK             *
-\*----------------------------------------*/
+//----------------------------------------//
+//              $CENTER-BLOCK             //
+//----------------------------------------//
 .center-block {
        display: block;
 
@@ -42,22 +38,20 @@
   margin-right: auto;
 }
 
-/*----------------------------------------*\
- *                $CLEARFIX               *
-\*----------------------------------------*/
-/**
- * Source: http://nicolasgallagher.com/micro-clearfix-hack/
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- * 3. For IE 6/7 only
- *    Triggers `hasLayout`
- */
+//----------------------------------------//
+//                $CLEARFIX               //
+//----------------------------------------//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+// 3. For IE 6/7 only
+//    Triggers `hasLayout`
 .clearfix {
   *zoom: 1; // 3
 
@@ -71,12 +65,12 @@
   }
 }
 
-/*----------------------------------------*\
- *              $DESCRIPTIONS             *
-\*----------------------------------------*/
-/*----------------------------------------*\
- *          $DESCRIPTION-VERTICAL         *
-\*----------------------------------------*/
+//----------------------------------------//
+//              $DESCRIPTIONS             //
+//----------------------------------------//
+//----------------------------------------//
+//          $DESCRIPTION-VERTICAL         //
+//----------------------------------------//
 .description-vertical {
 	dt {
 		font-weight: bold;
@@ -86,9 +80,9 @@
 		margin-left: 10px;
 	}
 }
-/*----------------------------------------*\
- *         $DESCRIPTION-HORIZONTAL        *
-\*----------------------------------------*/
+//----------------------------------------//
+//         $DESCRIPTION-HORIZONTAL        //
+//----------------------------------------//
 .description-horizontal {
 	dt {
 		float: left;
@@ -104,9 +98,9 @@
 	}
 }
 
-/*----------------------------------------*\
- *               $FONT-FACE               *
-\*----------------------------------------*/
+//----------------------------------------//
+//               $FONT-FACE               //
+//----------------------------------------//
 .font-face(@font-name, @font-file, @font-weight: normal, @font-style: normal) {
   @font-face {
     font-family: "@{font-name}";
@@ -120,19 +114,19 @@
   }
 }
 
-/*----------------------------------------*\
- *                 $LISTS                 *
-\*----------------------------------------*/
-/*----------------------------------------*\
- *             $LIST-UNSTYLED             *
-\*----------------------------------------*/
+//----------------------------------------//
+//                 $LISTS                 //
+//----------------------------------------//
+//----------------------------------------//
+//             $LIST-UNSTYLED             //
+//----------------------------------------//
 .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
-/*----------------------------------------*\
- *              $LIST-INLINE              *
-\*----------------------------------------*/
+//----------------------------------------//
+//              $LIST-INLINE              //
+//----------------------------------------//
 .list-inline {
   .list-unstyled;
 
@@ -144,29 +138,27 @@
   }
 }
 
-/*----------------------------------------*\
- *                  $SIZE                 *
-\*----------------------------------------*/
-/*----------------------------------------*\
- *              $SIZE-SQUARE              *
-\*----------------------------------------*/
+//----------------------------------------//
+//                  $SIZE                 //
+//----------------------------------------//
+//----------------------------------------//
+//              $SIZE-SQUARE              //
+//----------------------------------------//
 .size(@square) {
   .size(@square, @square);
 }
-/*----------------------------------------*\
- *            $SIZE-RECTANGLE             *
-\*----------------------------------------*/
+//----------------------------------------//
+//            $SIZE-RECTANGLE             //
+//----------------------------------------//
 .size(@width, @height) {
    width: @width;
   height: @height;
 }
 
-/*----------------------------------------*\
- *             $TEXT-TRUNCATE             *
-\*----------------------------------------*/
-/**
- * Requires inline-block or block for proper styling
- */
+//----------------------------------------//
+//             $TEXT-TRUNCATE             //
+//----------------------------------------//
+// Requires inline-block or block for proper styling
 .text-truncate(@truncate-model: clip) {
      overflow: hidden;
   white-space: nowrap;
