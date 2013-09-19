@@ -9,5 +9,5 @@ Of course all the credit for that goes to their creators, I've just put it in a 
 
 ## Installation
 
-Start using **ZweLess** is really easy: just [download](https://github.com/Zweer/zwe-less/archive/master.zip) the project, copy the whole less directory into your website folder and include the `zwe.less` file: `@import "zwe";`.
+Start using **ZweLess** is really easy: just [download](https://github.com/Zweer/zwe-less/archive/master.zip) the project, copy the whole less directory into your website folder and include the `_zwe.less` file: `@import "_zwe";`.
 Now you can start using all the mixins and variables provided by **ZweLess**
