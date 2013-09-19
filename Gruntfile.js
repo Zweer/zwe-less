@@ -11,7 +11,7 @@ module.exports = function (grunt) {
             ' * ZweLess v<%= pkg.version %> by @dotzweer\n' +
             ' * ----------------------------------------\n' +
             ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            ' * Licensed under <%= _.pluck(pkg.licenses, "url").join(", ") %>\n' +
+            ' * Licensed under <%= pkg.license %>\n' +
             ' */\n\n',
 
     // task configuration
