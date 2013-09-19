@@ -1,0 +1,75 @@
+//----------------------------------------//
+//                 $BORDER                //
+//----------------------------------------//
+//----------------------------------------//
+//              $BORDER-IMAGE             //
+//----------------------------------------//
+.border-image(@image: none) {
+  -webkit-border-image: @image; // Safari <= 5.1 & iOS < 6 & Android & Blackberry 7
+  -o-border-image: @image;
+  border-image: @image;
+}
+
+//----------------------------------------//
+//             $BORDER-RADIUS             //
+//----------------------------------------//
+.border-radius(@radius: 0) {
+  border-radius: @radius;
+  background-clip: padding-box;
+}
+//----------------------------------------//
+//        $BORDER-TOP-LEFT-RADIUS         //
+//----------------------------------------//
+.border-top-left-radius(@radius: 0) {
+  border-top-left-radius: @radius;
+  background-clip: padding-box;
+}
+//----------------------------------------//
+//        $BORDER-TOP-RIGHT-RADIUS        //
+//----------------------------------------//
+.border-top-right-radius(@radius: 0) {
+  border-top-right-radius: @radius;
+  background-clip: padding-box;
+}
+//----------------------------------------//
+//      $BORDER-BOTTOM-RIGHT-RADIUS       //
+//----------------------------------------//
+.border-bottom-right-radius(@radius: 0) {
+  border-bottom-right-radius: @radius;
+  background-clip: padding-box;
+}
+//----------------------------------------//
+//      $BORDER-BOTTOM-LEFT-RADIUS        //
+//----------------------------------------//
+.border-bottom-left-radius(@radius: 0) {
+  border-bottom-left-radius: @radius;
+  background-clip: padding-box;
+}
+//----------------------------------------//
+//           $BORDER-TOP-RADIUS           //
+//----------------------------------------//
+.border-top-radius(@radius: 0) {
+  .border-top-left-radius(@radius);
+  .border-top-right-radius(@radius);
+}
+//----------------------------------------//
+//          $BORDER-RIGHT-RADIUS          //
+//----------------------------------------//
+.border-right-radius(@radius: 0) {
+  .border-top-right-radius(@radius);
+  .border-bottom-right-radius(@radius);
+}
+//----------------------------------------//
+//         $BORDER-BOTTOM-RADIUS          //
+//----------------------------------------//
+.border-bottom-radius(@radius: 0) {
+  .border-bottom-left-radius(@radius);
+  .border-bottom-right-radius(@radius);
+}
+//----------------------------------------//
+//          $BORDER-LEFT-RADIUS           //
+//----------------------------------------//
+.border-left-radius(@radius: 0) {
+  .border-top-left-radius(@radius);
+  .border-bottom-left-radius(@radius);
+}

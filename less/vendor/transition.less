@@ -1,0 +1,45 @@
+//----------------------------------------//
+//              $TRANSITION               //
+//----------------------------------------//
+.transition(@transition: all 0 ease 0) {
+  -webkit-transition: @transition; // Chrome < 26 && Safari && iOS && Android && Blackberry
+  -moz-transition: @transition; // Firefox < 16
+  -o-transition: @transition; // Opera / Opera Mobile <= 12
+  transition: @transition;
+}
+//----------------------------------------//
+//           $TRANSITION-DELAY            //
+//----------------------------------------//
+.transition-delay(@delay: 0) {
+  -webkit-transition-delay: @delay; // Chrome < 26 && Safari && iOS && Android && Blackberry
+  -moz-transition-delay: @delay; // Firefox < 16
+  -o-transition-delay: @delay; // Opera / Opera Mobile <= 12
+  transition-delay: @delay;
+}
+//----------------------------------------//
+//          $TRANSITION-DURATION          //
+//----------------------------------------//
+.transition-duration(@duration: 0) {
+  -webkit-transition-duration: @duration; // Chrome < 26 && Safari && iOS && Android && Blackberry
+  -moz-transition-duration: @duration; // Firefox < 16
+  -o-transition-duration: @duration; // Opera / Opera Mobile <= 12
+  transition-duration: @duration;
+}
+//----------------------------------------//
+//          $TRANSITION-PROPERTY          //
+//----------------------------------------//
+.transition-property(@property: all) {
+  -webkit-transition-property: @property; // Chrome < 26 && Safari && iOS && Android && Blackberry
+  -moz-transition-property: @property; // Firefox < 16
+  -o-transition-property: @property; // Opera / Opera Mobile <= 12
+  transition-property: @property;
+}
+//----------------------------------------//
+//      $TRANSITION-TIMING-FUNCTION       //
+//----------------------------------------//
+.transition-timing-function(@function: ease) {
+  -webkit-transition-timing-function: @function; // Chrome < 26 && Safari && iOS && Android && Blackberry
+  -moz-transition-timing-function: @function; // Firefox < 16
+  -o-transition-timing-function: @function; // Opera / Opera Mobile <= 12
+  transition-timing-function: @function;
+}

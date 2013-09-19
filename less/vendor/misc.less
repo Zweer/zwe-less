@@ -1,0 +1,94 @@
+//----------------------------------------//
+//                 Vendor                 //
+//----------------------------------------//
+
+// Here are all the mixins which can facilitate the interaction with all the
+// vendors we have nowadays.
+
+// ----------------------------------------
+// $CONTENTS
+// ----------------------------------------
+// CONTENTS
+// BACKFACE-VISIBILITY
+// BOX-SHADOW
+// BOX-SIXING
+// INLINE-BLOCK
+// OPACITY
+// RESIZE
+// TEXT-OVERFLOW
+// USER-SELECT
+
+//----------------------------------------//
+//          $BACKFACE-VISIBILITY          //
+//----------------------------------------//
+.backface-visibility(@visibility: visible) {
+  -webkit-backface-visibility: @visibility;
+     -moz-backface-visibility: @visibility;
+      -ms-backface-visibility: @visibility;
+          backface-visibility: @visibility;
+}
+
+//----------------------------------------//
+//               $BOX-SHADOW              //
+//----------------------------------------//
+.box-shadow(@shadow: none) {
+  -webkit-box-shadow: @shadow; // iOS < 5 & Android < 4 & Blackberry 7
+          box-shadow: @shadow;
+}
+
+//----------------------------------------//
+//               $BOX-SIZING              //
+//----------------------------------------//
+.box-sizing(@box-model: content-box) {
+  -webkit-box-sizing: @box-model; // iOS < 5 & Android < 4 & Blackberry 7
+     -moz-box-sizing: @box-model;
+          box-sizing: @box-model;
+}
+
+//----------------------------------------//
+//              $INLINE-BLOCK             //
+//----------------------------------------//
+.inline-block {
+         display: -moz-inline-stack; // Firefox 2
+         display: inline-block;
+  vertical-align: top; // Resets the default vertical-align that is "baseline"
+            zoom: 1; // Triggers hasLayout on IE < 8
+        *display: inline; // IE < 8
+}
+
+//----------------------------------------//
+//                 $OPACITY               //
+//----------------------------------------//
+.opacity(@opacity: 1) {
+  opacity: @opacity;
+
+  @opacity-ie: @opacity * 100;
+  filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
+
+//----------------------------------------//
+//                $RESIZE                 //
+//----------------------------------------//
+.resize(@direction: none) {
+    resize: @direction;
+  overflow: auto; // Safari fix
+}
+
+//----------------------------------------//
+//            $TEXT-OVERFLOW              //
+//----------------------------------------//
+.text-overflow(@overflow: clip) {
+  -o-text-overflow: @overflow; // Opera < 11 && Opera Mini && Opera Mobile <= 12
+     text-overflow: @overflow;
+}
+
+//----------------------------------------//
+//              $USER-SELECT              //
+//----------------------------------------//
+.user-select(@mode: auto) {
+  -webkit-user-select: @mode;
+     -moz-user-select: @mode;
+      -ms-user-select: @mode;
+       -o-user-select: @mode; // Not yet implemented
+          user-select: @mode; // Not yet implemented
+}
