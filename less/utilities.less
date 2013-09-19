@@ -1,24 +1,40 @@
-// Utilities
+/*----------------------------------------*\
+ *                Utilities               *
+\*----------------------------------------*/
 
-// Dependences:
+/**
+ * Here are all the mixins and classes that could really help the developer with
+ * his/her pages.
+ */
+
+/*----------------------------------------*\
+ *              $DEPENDENCIES             *
+\*----------------------------------------*/
 @import "vendor";
 
-// Table of contents:
-// - Center Block
-// - Clearfix
-// - Descriptions
-// -- Description Vertical
-// -- Description Horizontal
-// - Font Face
-// - Lists
-// -- List Unstyled
-// -- List Inline
-// - Size
-// -- Square
-// -- Rectangle
-// - Text Truncate
+/**
+  * ----------------------------------------
+  * $CONTENTS
+  * ----------------------------------------
+  * CONTENTS
+  * CENTER BLOCK
+  * CLEARFIX
+  * DESCRIPTIONS
+  *   DESCRIPTION-VERTICAL
+  *   DESCRIPTION-HORIZONTAL
+  * FONT-FACE
+  * LISTS
+  *   LIST-UNSTYLED
+  *   LIST-INLINE
+  * SIZE
+  *   SIZE-SQUARE
+  *   SIZE-RECTANGLE
+  * TEXT-TRUNCATE
+  */
 
-// Center Block
+/*----------------------------------------*\
+ *              $CENTER-BLOCK             *
+\*----------------------------------------*/
 .center-block {
        display: block;
 
@@ -26,20 +42,22 @@
   margin-right: auto;
 }
 
-// Clearfix
-// This is not a mixin but a class because in this way it's easier to use directly in HTML
-// 
-// Source: http://nicolasgallagher.com/micro-clearfix-hack/
-//
-// For modern browsers
-// 1. The space content is one way to avoid an Opera bug when the
-//    contenteditable attribute is included anywhere else in the document.
-//    Otherwise it causes space to appear at the top and bottom of elements
-//    that are clearfixed.
-// 2. The use of `table` rather than `block` is only necessary if using
-//    `:before` to contain the top-margins of child elements.
-// 3. For IE 6/7 only
-//    Triggers `hasLayout`
+/*----------------------------------------*\
+ *                $CLEARFIX               *
+\*----------------------------------------*/
+/**
+ * Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * 3. For IE 6/7 only
+ *    Triggers `hasLayout`
+ */
 .clearfix {
   *zoom: 1; // 3
 
@@ -53,8 +71,12 @@
   }
 }
 
-// Descriptions
-// Description Vertical
+/*----------------------------------------*\
+ *              $DESCRIPTIONS             *
+\*----------------------------------------*/
+/*----------------------------------------*\
+ *          $DESCRIPTION-VERTICAL         *
+\*----------------------------------------*/
 .description-vertical {
 	dt {
 		font-weight: bold;
@@ -64,7 +86,9 @@
 		margin-left: 10px;
 	}
 }
-// Description Horizontal
+/*----------------------------------------*\
+ *         $DESCRIPTION-HORIZONTAL        *
+\*----------------------------------------*/
 .description-horizontal {
 	dt {
 		float: left;
@@ -80,7 +104,9 @@
 	}
 }
 
-// Font Face
+/*----------------------------------------*\
+ *               $FONT-FACE               *
+\*----------------------------------------*/
 .font-face(@font-name, @font-file, @font-weight: normal, @font-style: normal) {
   @font-face {
     font-family: "@{font-name}";
@@ -94,13 +120,19 @@
   }
 }
 
-// Lists
-// List Unstyled
+/*----------------------------------------*\
+ *                 $LISTS                 *
+\*----------------------------------------*/
+/*----------------------------------------*\
+ *             $LIST-UNSTYLED             *
+\*----------------------------------------*/
 .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
-// List Inline
+/*----------------------------------------*\
+ *              $LIST-INLINE              *
+\*----------------------------------------*/
 .list-inline {
   .list-unstyled;
 
@@ -112,19 +144,29 @@
   }
 }
 
-// Size
-// Square
+/*----------------------------------------*\
+ *                  $SIZE                 *
+\*----------------------------------------*/
+/*----------------------------------------*\
+ *              $SIZE-SQUARE              *
+\*----------------------------------------*/
 .size(@square) {
   .size(@square, @square);
 }
-// Rectangle
+/*----------------------------------------*\
+ *            $SIZE-RECTANGLE             *
+\*----------------------------------------*/
 .size(@width, @height) {
    width: @width;
   height: @height;
 }
 
-// Text Truncate
-// Requires inline-block or block for proper styling
+/*----------------------------------------*\
+ *             $TEXT-TRUNCATE             *
+\*----------------------------------------*/
+/**
+ * Requires inline-block or block for proper styling
+ */
 .text-truncate(@truncate-model: clip) {
      overflow: hidden;
   white-space: nowrap;
