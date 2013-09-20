@@ -4,7 +4,7 @@
 Nowadays there are a lot of different browsers, each with its set of prefixed properties and incompatibilities. 
 **ZweLess** tries (and we can say succeded quite well) to think about that for you, saving you time to enjoy the styling process and enhance your creativity. 
 
-A keen eye could easily see that a lot of the code of **ZweLess** is taken from [Preboot](http://getpreboot.com/) and from [Less Hat](http://lesshat.com/). 
+A keen eye could easily see that a lot of the code of **ZweLess** is taken from [Preboot](http://getpreboot.com/), [Less Hat](http://lesshat.com/) and [inuit.css](https://github.com/csswizardry/inuit.css).
 Of course all the credit for that goes to their creators, I've just put it in a single library, trying to make it better and more flexible.
 
 ## Installation
