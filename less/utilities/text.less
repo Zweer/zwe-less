@@ -22,9 +22,12 @@
 //----------------------------------------//
 //             $TEXT-TRUNCATE             //
 //----------------------------------------//
+
 // Requires inline-block or block for proper styling
+
 .text-truncate(@truncate-model: clip) {
   overflow: hidden;
   white-space: nowrap;
+
   .text-overflow(@truncate-model);
 }
