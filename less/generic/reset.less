@@ -1,0 +1,23 @@
+/**
+ * ----------------------------------------
+ *                  Reset
+ * ----------------------------------------
+ */
+
+// Here are all the resets for the site
+
+//----------------------------------------//
+//              $DEPENDENCIES             //
+//----------------------------------------//
+@import "../variables/defaults";
+@import "../vendor/misc";
+
+// Apply the border-box
+.apply-border-box (@condition) when (@condition = true) {
+  *,
+  *:before,
+  *:after {
+    .box-sizing(border-box);
+  }
+}
+.apply-border-box(@global-border-box);
