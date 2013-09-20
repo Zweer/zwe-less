@@ -1,0 +1,163 @@
+//----------------------------------------//
+//                 Arrow                  //
+//----------------------------------------//
+
+// This collection of mixins provide all the arrows you will ever want!!!
+// Thanks to:
+// - https://github.com/HugoGiraudel/LESS-Mixin-for-CSS-arrows
+// - http://codepen.io/anon/pen/fzebq
+
+// Usage:
+// .arrow(size, color, direction, offset[, border-size, border-color, context])
+
+// Where:
+// - size:         the width of the arrow
+// - color:        the color of the arrow
+//                   (plain color required)
+// - direction:    the orientation of the arrow
+//                   (top | right | bottom | left)
+// - offset:       the position of the arrow on its axis
+//                   (px | em)
+// - border-size:  the width of the border
+//                   (optional, default to 0)
+// - border-color: the color of the border
+//                   (optional, default to transparent)
+// - context:      the location of the arrow with respect to the box context
+//                  (outer | inner)
+//                  (optional, default to outer)
+
+// Extra:
+// - drop-shadow can be used on the element to create a shadow on the arrow as
+//   well
+
+.arrow(@size, @color, @direction, @offset, @border-size: 0, @border-color: transparent, @context: outer) {
+  position: relative;
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    border-collapse: separate;
+    border: @size solid transparent;
+  }
+
+  &:before {
+    border-width: @size + @border-size;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset,  @border-size: 0, @border-color: transparent, @context: outer) when (@direction = top) {
+  @m-size: @size + @border-size;
+
+  &:after,
+  &:before {
+    bottom: 100%;
+    left: @offset;
+    margin-left: -@size;
+
+    border-bottom-color: @color;
+  }
+
+  &:before {
+    margin-left: -@m-size;
+
+    border-bottom-color: @border-color;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset,  @border-size: 0, @border-color: transparent, @context: outer) when (@direction = bottom) {
+  @m-size: @size + @border-size;
+
+  &:after,
+  &:before {
+    top: 100%;
+    left: @offset;
+    margin-left: -@size;
+
+    border-top-color: @color;
+  }
+
+  &:before {
+    margin-left: -@m-size;
+
+    border-top-color: @border-color;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset,  @border-size: 0, @border-color: transparent, @context: outer) when (@direction = right) {
+  @m-size: @size + @border-size;
+
+  &:after,
+  &:before {
+    left: 100%;
+    top: @offset;
+    margin-top: -@size;
+
+    border-left-color: @color;
+  }
+  &:before {
+    margin-top: -@m-size;
+
+    border-left-color: @border-color;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset,  @border-size: 0, @border-color: transparent, @context: outer) when (@direction = left) {
+  @m-size: @size + @border-size;
+
+  &:after,
+  &:before {
+    right: 100%;
+    top: @offset;
+    margin-top: -@size;
+
+    border-right-color: @color;
+  }
+
+  &:before {
+    margin-top: -@m-size;
+
+    border-right-color: @border-color;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset,  @border-size: 0, @border-color: transparent, @context: outer) when (@direction = top) and (@context = inner) {
+  @m-size: 2 * (@size + @border-size);
+
+  &:after,
+  &:before {
+    margin-bottom: -@m-size;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset,  @border-size: 0, @border-color: transparent, @context: outer) when (@direction = right) and (@context = inner) {
+  @m-size: 2 * (@size + @border-size);
+
+  &:after,
+  &:before {
+    margin-left: -@m-size;
+  }
+}
+
+
+.arrow(@size, @color, @direction, @offset,  @border-size: 0, @border-color: transparent, @context: outer) when (@direction = left) and (@context = inner) {
+  @m-size: 2 * (@size + @border-size);
+
+  &:after,
+  &:before {
+    margin-right: -@m-size;
+  }
+}
+
+
+.arrow(@size, @color, @direction, @offset,  @border-size: 0, @border-color: transparent, @context: outer) when (@direction = bottom) and (@context = inner) {
+  @m-size: 2 * (@size + @border-size);
+
+  &:after,
+  &:before {
+    margin-top: -@m-size;
+  }
+}
