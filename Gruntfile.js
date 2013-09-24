@@ -42,6 +42,16 @@ module.exports = function (grunt) {
       }
     },
 
+    favicons: {
+      options: {
+
+      },
+      favicons: {
+        src: 'img/favicons/raw.png',
+        dest: 'img/favicons'
+      }
+    },
+
     watch: {
       recess: {
         files: 'less/*.less',
@@ -54,6 +64,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-favicons');
   grunt.loadNpmTasks('grunt-recess');
 
   // CSS distribution task.
