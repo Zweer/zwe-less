@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     // metadata
-    pkg: grunt.file.readJSON('../master/package.json'),
+    //pkg: grunt.file.readJSON('../master/package.json'),
     banner: '/**\n' +
             ' * ----------------------------------------\n' +
             ' * ZweLess v<%= pkg.version %> by @dotzweer\n' +
@@ -44,7 +44,8 @@ module.exports = function (grunt) {
 
     favicons: {
       options: {
-
+        appleTouchBackgroundColor: 'none',
+        tileColor: 'none'
       },
       favicons: {
         src: 'img/favicons/raw.png',
