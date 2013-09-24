@@ -71,7 +71,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['copy', 'recess']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean', 'dist-css']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'favicons']);
 
   // Default task.
   grunt.registerTask('default', ['dist']);
