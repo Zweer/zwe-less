@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     // metadata
-    //pkg: grunt.file.readJSON('../master/package.json'),
+    pkg: grunt.file.readJSON('../master/package.json'),
     banner: '/**\n' +
             ' * ----------------------------------------\n' +
             ' * ZweLess v<%= pkg.version %> by @dotzweer\n' +
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
           compress: true
         },
         src: ['less/main.less'],
-        dest: 'css/main.min.css'
+        dest: 'css/main.css'
       }
     },
 
@@ -65,14 +65,14 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-favicons');
+  //grunt.loadNpmTasks('grunt-favicons');
   grunt.loadNpmTasks('grunt-recess');
 
   // CSS distribution task.
   grunt.registerTask('dist-css', ['copy', 'recess']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean', 'dist-css', 'favicons']);
+  grunt.registerTask('dist', ['clean', 'dist-css'/*, 'favicons'*/]);
 
   // Default task.
   grunt.registerTask('default', ['dist']);
