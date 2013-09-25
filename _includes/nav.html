@@ -1,0 +1,15 @@
+<header class="nav" role="banner">
+    <div class="container">
+        <nav role="navigation">
+            <ul class="list-inline">
+                <li>
+                    <a href="{{ page.base_url }}">ZweLess</a>
+                </li>
+
+                <li{% if page.slug == "getting-started" %} class="active"{% endif %}>
+                <a href="{{ page.base_url }}getting-started">Getting Started</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
