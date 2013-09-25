@@ -53,6 +53,21 @@ module.exports = function (grunt) {
       }
     },
 
+    jekyll: {
+      docs: {
+        dest: '../site'
+      }
+    },
+
+    validation: {
+      options: {
+        reset: true
+      },
+      files: {
+        src: ["../site/**.html"]
+      }
+    },
+
     watch: {
       recess: {
         files: 'less/*.less',
@@ -67,6 +82,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   //grunt.loadNpmTasks('grunt-favicons');
   grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-html-validation');
+  grunt.loadNpmTasks('grunt-jekyll');
+
+  // Docs HTML validation task
+  grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
   // CSS distribution task.
   grunt.registerTask('dist-css', ['copy', 'recess']);
@@ -76,4 +96,7 @@ module.exports = function (grunt) {
 
   // Default task.
   grunt.registerTask('default', ['dist']);
+
+  // Test task
+  grunt.registerTask('test', ['dist', 'validate-html']);
 };

@@ -1,3 +1,5 @@
+exclude:         [".gitignore", "Gruntfile.js", "package.json", "node_modules", "README.md", "less"]
+
 # Custom vars
 current_version: 2.1.1
 
