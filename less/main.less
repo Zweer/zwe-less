@@ -2,17 +2,61 @@
 
 @fontText: "HelveticaNeueW01-45Ligh";
 @fontTitle: "Showcard Gothic";
+@fontSize: 14px;
+
+@backgroundColor: #e2a7fb;
 
 .font-face(@fontTitle, "../font/showcard-gothic/showcard");
 
 body {
   font-family: @fontText;
+
+  &.home {
+    background-image: url("../img/background.png");
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: @fontTitle;
 }
 
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .container {
   width: 940px;
+
+  .center-block;
+}
+
+.nav {
+  background-color: @backgroundColor;
+
+  border-bottom: 1px solid darken(@backgroundColor, 50%);
+
+  .box-shadow(0 1px 0 rgba(255, 255, 255, .1));
+
+  li {
+    color: rgba(255, 255, 255, .5);
+
+    &:first-child {
+      font-weight: bold;
+      font-size: @fontSize + 2px;
+    }
+
+    &.active {
+      color: rgba(255, 255, 255, 1);
+      background: darken(@backgroundColor, 20%);
+    }
+
+    a {
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+  }
 }
