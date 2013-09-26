@@ -1,4 +1,4 @@
-exclude:         [".gitignore", "Gruntfile.js", "package.json", "node_modules", "README.md", "less"]
+exclude:         [".gitignore", "Gruntfile.js", "package.json", "node_modules", "README.md", "less", "validation-report.json", "validation-status.json" ]
 
 # Custom vars
 current_version: 2.1.1

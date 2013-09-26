@@ -69,9 +69,16 @@ module.exports = function (grunt) {
     },
 
     watch: {
+      options: {
+        interval: 5007
+      },
       recess: {
-        files: 'less/*.less',
+        files: 'less/**.less',
         tasks: ['recess']
+      },
+      test: {
+        files: ['less/**.less', '**.html', '_config.yml'],
+        tasks: ['test']
       }
     }
   });
