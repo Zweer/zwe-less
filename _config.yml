@@ -7,4 +7,5 @@ exclude:         [".gitignore", "Gruntfile.js", "package.json", "node_modules", 
 # Custom vars
 current_version: 2.1.1
 
-download_dist:   https://github.com/Zweer/zwe-less/archive/master.zip
+download_dist:   https://github.com/Zweer/zwe-less/releases/download/v2.1.1/dist.zip
+download_source: https://github.com/Zweer/zwe-less/archive/v2.1.1.zip
