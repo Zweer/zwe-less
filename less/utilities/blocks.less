@@ -18,8 +18,8 @@
 //              $ADJUST-ANCHOR            //
 //----------------------------------------//
 
-.adjust-anchor(@height) {
-  padding-top: @height;
+.adjust-anchor(@height, @addendum: 0) {
+  padding-top: @height + @addendum;
   margin-top: @height * -1;
 }
 
