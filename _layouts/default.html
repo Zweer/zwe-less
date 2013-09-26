@@ -8,7 +8,7 @@
         <!-- Meta, title, CSS etc. -->
         {% include header.html %}
     </head>
-    <body class="home">
+    <body class="{{ page.slug }} default">
         <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -30,7 +30,7 @@
                 {% endif %}
             </div>
 
-            <main role="main" class="{{ page.slug }}-main">
+            <main role="main" class="{{ page.slug }}-main main">
                 {{ content }}
             </main>
         </div>
