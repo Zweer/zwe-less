@@ -77,7 +77,7 @@ module.exports = function (grunt) {
         tasks: ['recess']
       },
       test: {
-        files: ['less/**.less', '**.html', '_config.yml'],
+        files: ['less/**.less', '*.html', '*/**.html', '_config.yml'],
         tasks: ['test']
       }
     }
