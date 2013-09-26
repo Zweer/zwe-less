@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Meta, title, CSS etc. -->
+        {% include header.html %}
+    </head>
+    <body class="home">
+        <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Include the master navigation -->
+        {% include nav.html %}
+
+        <div class="header">
+            <div class="container">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.subtitle }}</p>
+            </div>
+        </div>
+
+        <div class="container clearfix">
+            <div class="sidenav">
+                {% if page.slug == "getting-started" %}
+                    {% include nav-getting-started.html %}
+                {% endif %}
+            </div>
+
+            <main role="main" class="{{ page.slug }}-main">
+                {{ content }}
+            </main>
+        </div>
+
+        <!-- JS and analytics -->
+        {% include footer.html %}
+    </body>
+</html>
