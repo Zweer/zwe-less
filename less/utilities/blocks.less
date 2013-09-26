@@ -8,10 +8,20 @@
 //                $CONTENTS               //
 //----------------------------------------//
 // CONTENTS.............You are reading it!
+// ADJUST-ANCHOR........When you have to adjust the anchors with a fixed header
 // CENTER_BLOCK.........When you want to center something
 // SIZE.................All you need to size a block
 //   SIZE-SQUARE........Making a block squared
 //   SIZE_RECTANGLE.....Making a block a rectangle
+
+//----------------------------------------//
+//              $ADJUST-ANCHOR            //
+//----------------------------------------//
+
+.adjust-anchor(@height) {
+  padding-top: @height;
+  margin-top: @height * -1;
+}
 
 //----------------------------------------//
 //              $CENTER-BLOCK             //
