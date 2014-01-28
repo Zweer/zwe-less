@@ -1,0 +1,13 @@
+#samesizefix {
+  .bold {
+    &:after {
+      display: block;
+      content: attr(title);
+      font-weight: bold;
+      height: 1px;
+      color: transparent;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+}
